@@ -1,0 +1,61 @@
+@import '../../styles/main.css';
+
+/*========== FOOTER ==========*/
+
+.footer {
+    min-width: 300px;
+    max-width: 1100px;
+    height: 68px;
+    margin: 0 auto;
+}
+
+.footer__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    height: 68px;
+    background: #080808;
+    border-radius: 50px 50px 0 0;
+    border-top: 5px ridge #ffffff4d;
+    transition: border-top 0.4s;
+}
+.footer__container:hover {
+    border-top: 5px ridge var(--hover-border-color);
+}
+
+.g__logo {
+    display: none;
+}
+
+@media (min-width: 500px) {
+    .footer__container {
+        justify-content: space-between;
+    }
+    .footer__container p {
+        margin: 0 0 0 50px;
+    }
+    .footer__container img {
+        width: 160px;
+        height: 40px;
+        margin: 0 50px 0 0;
+    }
+    .g__logo {
+        display: block;
+    }
+}
+/* TABLET */
+@media (min-width: 700px) {
+    footer {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1010px) {
+    footer, .footer__container{
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+}

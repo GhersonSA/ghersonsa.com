@@ -1,0 +1,421 @@
+@import '../../styles/main.css';
+
+/*========== CONTACT ==========*/
+
+.formulario {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 50px auto;
+}
+
+.formulario__container {
+    margin: 0 10px;
+    padding-top: 96px;
+}
+.formulario__container .h2-title {
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.formularios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario__1 {
+    display: none;
+}
+
+.formulario__2 {
+    position: relative;
+    width: 600px;
+    max-width: 600px;
+    height: 575px;
+    max-height: 600px;
+    background: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+    border: 5px ridge rgb(255, 255, 255);
+    border-radius: 20px;
+    box-shadow: 
+        0 0 5px var(--text-color),
+        0 0 5px var(--text-color),
+        0 0 5px var(--text-color);
+}
+
+.form__chat {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #232427;
+    background: var(--container-color);
+    border-bottom: 1px solid #b05bff3b;
+    border-radius: 20px 20px 0px 0px;
+}
+.form__chat div {
+    position: relative;
+    margin: 0 10px;
+}
+.form__chat div:nth-child(1) {
+    display: flex;
+    align-items: center;
+}
+
+.form__chat-nombre {
+    font-size: 1.5rem;
+    color: var(--text-color);
+}
+.form__chat-disponibilidad {
+    font-size: 1.3rem;
+    animation: text__animation 2s infinite;
+}
+
+.fa-phone {
+    margin-right: 5px;
+    font-size: 2rem;
+    color: var(--text-color);
+    transition: transform 0.4s ease;
+}
+.fa-phone:hover {
+    transform: scale(1.10);
+    transition: transform 0.2s ease;
+    text-shadow: 
+        0 0 3px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+
+.green__point {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    top: 20px;
+    left: 20px;
+}
+
+@keyframes text__animation {
+    0% {
+        color: #ffffff;
+        text-shadow: 
+            0 0 5px var(--primary-color-light),
+            0 0 5px var(--primary-color-light),
+            0 0 5px var(--primary-color-light);
+    }
+    50% {
+        color: #beffbe;
+        text-shadow: 
+            0 0 1px #0f0,
+            0 0 1px #0f0,
+            0 0 1px #0f0;
+    }
+    100% {
+        color: #ffffff;
+        text-shadow: 
+            0 0 5px var(--primary-color-light),
+            0 0 5px var(--primary-color-light),
+            0 0 5px var(--primary-color-light);
+    }
+}
+
+.form__photo {
+    border-radius: 50%;
+}
+
+.green__point-2 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    top: 131px;
+    left: 25px;
+}
+
+.form__miniphoto {
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    right: 0;
+    border-radius: 50%;
+    background: url(../../assets/images/img-casual.jpg) no-repeat center center/cover;
+}
+
+.form__name .h2-title {
+    margin: 0;
+    margin-top: 40px;
+    font-size: 2.5rem;
+}
+.form__name h4 {
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+
+.form__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    font-size: 2.5rem;
+}
+.form__linkedin a,
+.form__github a {
+    color: var(--text-color);
+}
+
+.form__message {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+.form__message time {
+    position: absolute;
+    left: 50%;
+    top: 70px;
+    font-size: larger;
+}
+.form__message p {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 10px;
+    color: black;
+    margin-right: 20px;
+    margin-left: 5px; 
+    padding: 0 10px;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+.form__contact {
+    display: flex;
+    flex-direction: column;
+}
+.form__group {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    margin-top: 20px;
+    color: white;
+}
+
+.form__group div {
+    width: 100%;
+    min-width: 240px;
+    max-width: 500px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    background-color: rgba(56, 0, 121, 0.541);
+    border-radius: 10px;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+.form__group div input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin-left: 10px;
+    color: #C1C1C1;
+}
+
+.form__group div i {
+    color: #C1C1C1;
+}
+
+.form__message-2 {
+    position: relative;
+    display: flex;
+    align-items: end;
+    margin-top: 25px;
+}
+.form__message-2 p {
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border: 1px solid rgba(255, 255, 255, 0.26);
+    border-radius: 10px;
+    color: black;
+    margin-right: 20px;
+    margin-left: 5px; 
+    padding: 0 10px;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+.green__point-3 {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    bottom: 0px;
+    left: 25px;
+}
+
+.form__button {
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--container-color);
+    border-top: 1px solid #b05bff3b;
+    border-radius: 0px 0px 20px 20px;
+}
+.submit__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 200px;
+    height: 30px;
+    background-color: rgba(56, 0, 121, 0.541);
+    color: var(--text-color);
+    border-radius: 10px;
+    font-size: 1.6rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.submit__button:hover {
+    background-color: rgb(57, 0, 121);
+    transform: scale(1.10);
+}
+
+/* ANIMATIONS */
+
+.message__animation {
+    opacity: 0;
+    transform: scale(0.8) translateX(-10px);
+    transform-origin: bottom left;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.message-2__animation {
+    opacity: 0;
+    transform: scale(0.8) translateX(-10px);
+    transform-origin: bottom left;
+    transition: opacity 0.5s ease-out, transform 0.8s ease-out;
+}
+.social__animation {
+    opacity: 0;
+    transform: scale(0.5);
+    transition: opacity 0.5s ease-out, transform 1s ease-out;
+}
+.visible {
+    opacity: 1;
+    transform: scale(1) translateX(0);
+}
+
+@media (min-width: 540px) {
+    .form__message {
+        margin-left: 10px;
+    }
+    .green__point-2 {
+        left: 35px;
+    }
+    .green__point-3 {
+        bottom: 0px;
+        left: 27px;
+    }
+    .form__miniphoto {
+        margin-right: 5px;
+    }
+    .form__message-2 {
+        margin-left: 10px;
+    }
+    .form__message-2 p {
+        height: 150px;
+        width: 400px;
+    }
+    .form__group div {
+        margin: 0 10px;
+    }
+    .form__button {
+        height: 60px;
+        margin-top: 40px;
+        align-items: center;
+    }
+}
+
+@media (min-width: 670px) {
+    .formulario__container .h2-title {
+        text-align: left;
+    }
+}
+
+/* TABLET */
+@media (min-width: 700px) {
+    .formulario {
+        max-width: 700px;
+    }
+    .formulario__container {
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1010px) {
+    .formulario {
+        max-width: 1000px;
+    }
+    .formulario__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .formulario__1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 600px;
+        width: 400px;
+        background: linear-gradient(to right,#63636315, #0000005b);
+        border: 5px ridge rgb(255, 255, 255);
+        border-radius: 20px;
+        box-shadow: 
+            0 0 5px var(--text-color),
+            0 0 5px var(--text-color),
+            0 0 3px var(--text-color);
+    }
+    .formulario__1--blur {
+        height: 600px;
+        width: 400px;
+        position: absolute;
+        background: #0000009c;
+        background: #50505010;
+        background: #fafafa10;
+        backdrop-filter: blur(5px) saturate(120%);
+        border-radius: 20px;
+        z-index: -1;
+    }
+    .formulario__2 {
+        border-radius: 0 20px 20px 0;
+        border-left: 0;
+    }
+    .form__img {
+        border: 10px ridge white;
+        border-radius: 50%;
+        box-shadow: 
+            0 0 5px var(--text-color),
+            0 0 5px var(--text-color),
+            0 0 3px var(--text-color);
+    }
+    .form__chat {
+        border-left: 0;
+        border-radius: 0px 20px 0px 0px;
+    }
+    .form__button {
+        border-left: 0;
+        border-radius: 0px 0px 20px 0px;
+    }
+}

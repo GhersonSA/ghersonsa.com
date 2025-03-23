@@ -1,0 +1,61 @@
+@import '../styles/utils/variables.css';
+
+/*========== REUSABLE CSS CLASSES ==========*/
+/*.container {
+    min-width: var(--container-max-w-mobile);
+    max-width: var(--container-max-w-desktop);
+    margin: 0 auto;
+}
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.h2-title {
+    background: var(--title-color);
+    background-clip: text;
+    color: transparent;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+    font-size: var(--h2--font-title);
+}
+
+/*========== HERO ==========*/
+
+.before-after-border::before,
+.before-after-border::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: radial-gradient(circle, var(--color1), var(--color2));
+}
+.before-after-border::before {
+    top: 0;
+}
+
+.hero-left-right {
+    width: 50%;
+    transition: 0.2s ease-in-out;
+}
+.hero-left-right::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    opacity: 0.5;
+    z-index: -1;
+    pointer-events: none;
+    transition: 0.3s ease-in-out;
+}
+.hero-left-right:hover {
+    background: linear-gradient(270deg, #1d1d1d10 10%, rgb(0, 0, 0) 100%);
+}
+.hero-left-right:hover::before {
+    opacity: 0.8;
+}
+.hero-left-right:hover h2 {
+    color: rgba(255, 255, 255, 0.925);
+}

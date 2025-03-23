@@ -1,0 +1,31 @@
+@import '../styles/utils/variables.css';
+
+/*========== BASE ==========*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scrollbar-color: var(--text-color) #232427;
+    color: var(--text-color);
+}
+body {
+    background: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-primary);
+}
+input,
+button,
+textarea {
+    border: none;
+    outline: none;
+}
+ul, li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}

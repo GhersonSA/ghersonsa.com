@@ -1,0 +1,394 @@
+@import '../../styles/main.css';
+
+/*========== ABOUT ME ==========*/
+
+.sobre-mi {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.sobre-mi__container {
+    margin: 0 10px;
+    padding-top: 96px;
+}
+.sobre-mi__container .h2-title {
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.sobre-mi__card {
+    position: relative;
+    padding: 10px;
+    background: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+    border-top: 3px solid #b05bff3b;
+    border-bottom: 3px solid #b05bff3b;
+    border-radius: 40px;
+    overflow: hidden;
+    animation: bordeColor 2s linear infinite;
+}
+
+@keyframes bordeColor {
+    0% {
+        border-color: #b05bff3b;
+    }
+    50% {
+        border-color: #b05bff4d;
+    }
+    100% {
+        border-color: #b05bff3b;
+    }
+}
+
+.sobre-mi__img {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    overflow: hidden;
+}
+.sobre-mi__img img {
+    width: 355px;
+    height: auto;
+    object-fit: cover;
+}
+
+.g-photo__mobile {
+    margin: 20px auto;
+    width: 250px;
+    height: 250px;
+    border: 10px ridge #ffffff;
+    border-radius: 50%;
+    background: url('../../assets/images/perfil-light.png') no-repeat center center/cover;
+    background-color: #29024e9f;
+    box-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+    object-fit: cover;
+}
+.g-photo__desktop {
+    display: none;
+}
+
+.sobre-mi__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sobre-mi__nombre {
+    font-size: clamp(3.5rem, 5vw, 4rem);
+    background: var(--title-color);
+    background-clip: text;
+    color: transparent;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(255, 255, 255, 0.2);
+}
+
+.sobre-mi__profesion {
+    font-size: clamp(1rem, 5vw, 2rem);
+    text-align: center;
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+
+.sobre-mi__disponibilidad {
+    width: fit-content;
+    background: transparent;
+    margin: 0 auto;
+    margin-top: 5px;
+    margin-bottom: 32px;
+    padding: 5px;
+    border: 2px solid #beffbe;
+    color: #beffbe;
+    border-radius: 20px;
+    text-align: center;
+    animation: cambioColor 2s linear infinite;
+}
+
+@keyframes cambioColor {
+    0% {
+        color: #beffbe;
+        border-color: #beffbe;
+        box-shadow: 
+            0 0 5px #beffbe,
+            0 0 5px #beffbe,
+            0 0 5px #beffbe;
+    }
+    50% {
+        color: #5bff5ba9;
+        border-color: #5bff5ba9;
+
+    }
+    100% {
+        color: #beffbe;
+        border-color: #beffbe;
+    }
+}
+
+.sobre-mi__p {
+    font-size: clamp(1rem, 5vw, 1.6rem);
+    margin: 16px 0 0;
+}
+.sobre-mi__p span {
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+
+.sobre-mi__float-1,
+.sobre-mi__float-2,
+.sobre-mi__float-3 {
+    display: none;
+}
+
+.sobre-mi__skills {
+    margin-top: 32px;
+}
+.sobre-mi__skills h2 {
+    margin-bottom: 16px;
+
+}
+.skills__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    gap: 5px;
+
+}
+.skills__container span div{
+    width: fit-content;
+    background-color: #2e325c7a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+.skills__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+.skills__icon:hover {
+    transform: scale(0.90);
+}
+
+.skills__icon p {
+    margin-left: 5px;
+    font-size: 1.4rem;
+}
+
+.html {
+    background-color: #f0652938;
+}
+.css {
+    background-color: #2965f138;
+}
+.js {
+    background-color: #f0db4f38;
+}
+.react {
+    background-color: #88dded38;
+}
+.tailwind {
+    background-color: #00315938;
+}
+.sass {
+    background-color: #cc669938;
+}
+.node {
+    background-color: #68a06338;
+}
+.express {
+    background-color: #6cc24a38;
+}
+.mysql {
+    background-color: #00758f38;
+}
+.mongodb {
+    background-color: #3fa03738;
+}
+.git {
+    background-color: #f1502f38;
+}
+.github {
+    background-color: #33333338;
+}
+
+@media (min-width: 670px) {
+    .sobre-mi__container .h2-title {
+        text-align: left;
+    }
+    .sobre-mi__card {
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .sobre-mi__img {
+        width: 50%;
+    }
+    .g-photo__mobile {
+        display: none;
+    }
+    .g-photo__desktop {
+        display: block;
+    }
+    .sobre-mi__section {
+        width: 50%;
+        padding: 0 10px;
+    }
+    .sobre-mi__nombre {
+        margin-top: 32px;
+        font-size: clamp(2.4rem, 3vw, 4rem);
+    }
+    .sobre-mi__nombre,
+    .sobre-mi__profesion {
+        text-align: left;
+    }
+    .sobre-mi__disponibilidad {
+        margin: 0;
+        margin-top: 5px;
+    }
+
+    .skills__container {
+        justify-content: left;
+        margin-bottom: 32px;
+    }
+    
+}
+
+/* TABLET */
+@media (min-width: 700px) {
+    .sobre-mi {
+        max-width: 700px;
+    }
+    .sobre-mi__container {
+        margin: 0 auto;
+    }
+
+    .sobre-mi__img {
+        width: 45%;
+    }
+    .sobre-mi__section {
+        width: 55%;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1010px) {
+    .sobre-mi {
+        max-width: 1000px;
+    }
+    .sobre-mi__card {
+        height: 600px;
+        max-height: 600px;
+    }
+    .sobre-mi__float-1,
+    .sobre-mi__float-2,
+    .sobre-mi__float-3 {
+        display: block;
+        position: absolute;
+        font-size: 1.3rem;
+        color: #beffbe;
+        text-shadow: 
+            0 0 1px #0f0,
+            0 0 1px #0f0,
+            0 0 1px #0f0;
+    }
+    .sobre-mi__float-1 {
+        top: 105px;
+        left: 25px;
+        animation: float-1__animation 1.5s infinite 2s;
+    }
+    .sobre-mi__float-2 {
+        top: 100px;
+        left: 300px;
+        animation: float-2__animation 1.5s infinite 2s;
+    }
+
+    @keyframes float-1__animation {
+        0%, 100% {
+            transform: translateY(0);
+            color: #ffffff;
+            text-shadow: 
+                0 0 5px var(--primary-color-light),
+                0 0 5px var(--primary-color-light),
+                0 0 5px var(--primary-color-light);
+        }
+        50% {
+            transform: translateY(0px) translateX(-5px);
+            color: #beffbe;
+            text-shadow: 
+                0 0 1px #0f0,
+                0 0 1px #0f0,
+                0 0 1px #0f0;
+        }
+    }
+
+    @keyframes float-2__animation {
+        0%, 100% {
+            transform: translateY(0);
+            color: #ffffff;
+            text-shadow: 
+                0 0 5px var(--primary-color-light),
+                0 0 5px var(--primary-color-light),
+                0 0 5px var(--primary-color-light);
+        }
+        50% {
+            transform: translateY(0px) translateX(-5px);
+            color: #beffbe;
+            text-shadow: 
+                0 0 1px #0f0,
+                0 0 1px #0f0,
+                0 0 1px #0f0;
+        }
+    }
+
+    /* Animaciones */
+    .title__animation {
+        opacity: 0;
+        transform: translateX(80px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .profesion__animation {
+        opacity: 0;
+        transform: translateX(-40px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .disponibilidad__animation {
+        opacity: 0;
+        transform: translateX(-80px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .right__animation {
+        opacity: 0;
+        transform: translateX(50px);
+        transition: opacity 1.5s ease-out, transform 1.5s ease-out;
+    }
+    .left__animation {
+        opacity: 0;
+        transform: translateX(-50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .top__animation {
+        opacity: 0;
+        transform: translateY(50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .down__animation {
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+    .visible {
+        opacity: 1;
+        transform: translateX(0);
+        transform: translateY(0);
+    }
+}

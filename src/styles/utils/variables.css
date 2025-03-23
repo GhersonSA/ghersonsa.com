@@ -1,0 +1,52 @@
+/*========== Fonts ==========*/
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Syne:wght@400..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
+
+:root {
+/*========== Colors ==========*/
+--primary-color: #3f0079;
+--primary-color-light: #8400ff;
+--secondary-color: #0f0;
+
+--text-color: #fff;
+--text-color-dark: #000;
+
+--bg-color: #000;
+--bg-color-light: #232427;
+--header-footer-bg: #080808;
+
+--title-color: linear-gradient(180deg, #ffffff, #ffffff, #868686, #ffffff, #ffffff);
+
+--container-color: linear-gradient(to right, #6363633f, #0000005b, #6363633f);
+--container-secondary: linear-gradient(to left, #000000b6 0%, #3f0079, #000000b6 100%);
+
+--body-border: radial-gradient(circle, #ffffff5e, #0000005e);
+--hero-border: radial-gradient(circle, #ffffff, #000000);
+--border-color: rgba(255, 255, 255, 0.404);
+--hover-border-color: rgba(255, 255, 255, 0.604);
+
+/*========== Typography ==========*/
+--font-primary: 'Syne', sans-serif;
+--font-secondary: 'Onest', sans-serif;
+
+/*========== Font sizes ==========*/
+--hero-font-size: 4.2rem;
+--h2--font-title: 3.5rem;
+--h3--font-size: 1.8rem;
+
+--hero-font-size-mobile: 4.2rem;
+
+/*========== Layout Widths ==========*/
+--header-and-footer: 1100px;
+--container-max-w-mobile: 300px;
+--container-max-w-tablet: 700px;
+--container-max-w-desktop: 1000px;
+
+/*========== Media Queries ==========
+--breakpoint-mobile: 320px;
+--breakpoint-540: 540px;
+--breakpoint-670: 670px;
+--breakpoint-tablet: 700px;
+--breakpoint-desktop: 1010px;
+*/
+}

@@ -1,0 +1,181 @@
+@import '../../styles/main.css';
+
+/*========== PROJECTS ==========*/
+
+.proyectos {
+    min-width: var(--container-max-w-mobile);
+    max-width: var(--container-max-w-desktop);
+    margin: 0 auto;
+}
+.proyectos__container {
+    margin: 0 10px;
+    padding-top: 96px;
+}
+.proyectos__container .h2-title {
+    margin: 0 0 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.proyectos__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    place-items: center;
+}
+
+.proyectos__card {
+    min-width: 300px;
+    max-width: 325px;
+    height: 464px;
+    padding: 5px;
+    background: var(--container-color);
+    border-top: 2px solid var(--border-color);
+    border-bottom: 2px solid var(--border-color);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+    transition: all 0.3s ease-in-out, 0.25s cubic-bezier(0, 0, 0, 1);
+    cursor: pointer;
+}
+.proyectos__card:hover {
+    border-radius: 18px;
+    border-color: #ffffff96;
+    background: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.302),
+                    rgba(0, 0, 0, 1) 90%,
+                    rgba(50, 50, 50, 0.7) 50%,
+                    rgba(0, 0, 0, 1) 70%,
+                    rgba(255, 255, 255, 0.302));
+    box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
+    transform: scale(0.98);
+    animation: cardAnimacion 1.4s;
+    filter: brightness(1.1);
+}
+.proyectos__card::before {
+    transition: all 0.3s ease-in-out;
+}
+.proyectos__card:nth-child(n+4) { 
+    display: none;
+}
+
+@keyframes cardAnimacion {
+    0% {
+        box-shadow: 0 0 0 0 var(--border-color);
+    }
+}
+
+.card__img {
+    width: 100%;
+    height: 180px;
+    border-radius: 20px;
+    border-bottom: 1px solid var(--border-color);
+    object-fit: cover;
+    object-position: center; /*?*/
+    transition: transform 0.3s ease;
+}
+.card__img:hover {
+    transform: scale(1.05);
+}
+
+.card__content {
+    padding: 1.5rem;
+    z-index: 1;
+}
+
+.card__title {
+    margin: 10px 0;
+    font-size: 1.8rem;
+    font-family: var(--font-primary);
+    text-shadow: 
+            0 0 5px var(--primary-color-light),
+            0 0 5px var(--primary-color-light),
+            0 0 5px var(--primary-color-light);
+    color: var(--text-color);
+    transition: text-shadow 0.3s ease;
+}
+.card__title:hover {
+    text-shadow: 
+        0 0 10px #9b4dff, 
+        0 0 20px #8b40e7, 
+        0 0 40px #a75aff, 
+        0 0 80px #c593ff;
+}
+.card__description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 7;
+    line-clamp: 7;
+    text-overflow: ellipsis;
+    font-size: 1.4rem;
+    color: #c1c1c1;
+    margin: 15px 0;
+    font-family: var(--font-primary);
+    overflow: hidden;
+}
+
+.card__ul {
+    display: flex;
+    align-items: end;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card__li {
+    background-color: #2e325c7a;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 1.2rem;
+    list-style-type: none;
+    font-family: var(--font-primary);
+}
+
+.proyectos__p {
+    margin-top: 32px;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    font-family: var(--font-secondary);
+    color: var(--text-color);
+    transition: transform 0.4s ease;
+}
+.proyectos__p:hover {
+    transform: scale(1.05);
+    transition: transform 0.2s ease;
+}
+
+@media (min-width: 670px) {
+    .proyectos__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .proyectos__container .h2-title {
+        text-align: left;
+    }
+    .proyectos__card:nth-child(n+4) { 
+        display: block;
+    }
+}
+
+/* TABLET */
+@media (min-width: 700px) {
+    .proyectos {
+        max-width: 700px;
+    }
+    .proyectos__container {
+        margin: 0 auto;
+    }
+}
+
+/* DESKTOP */
+@media (min-width: 1010px) {
+    .proyectos {
+        max-width: 1000px;
+    }
+    .proyectos__grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .proyectos__card {
+        max-width: 325px;
+    }
+}

@@ -1,0 +1,210 @@
+@import '../../styles/main.css';
+
+/*========== HEADER ==========*/
+
+header {
+  min-width: var(--container-max-w-mobile);
+  max-width: var(--container-max-w-desktop);
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  height: 68px;
+  background-color: var(--header-footer-bg);
+  border-bottom: 5px ridge var(--border-color);
+  border-radius: 0 0 50px 50px;
+  transition: background 0.3s ease, backdrop-filter 0.3s ease, border-bottom 0.4s;
+}
+header:hover {
+  border-bottom: 5px ridge var(--hover-border-color);
+}
+header.blur {
+  backdrop-filter: blur(10px);
+  background: #18003b33;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  margin: 0 10px;
+}
+.header__logo {
+  margin-left: 20px;
+  transition: 0.4s;
+}
+.header__logo:hover {
+  transform: rotate(-10deg);
+  transition: 0.4s ease;
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 20px 10px 0;
+  border: none;
+  background: none;
+  color: var(--text-color);
+  font-size: 28px;
+  cursor: pointer;
+}
+#check {
+  display: none;
+}
+
+/* Mobile Menu */
+.header__mobile {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: rgba(17, 0, 61, 0.521);
+  backdrop-filter: blur(10px);
+  top: 67px;
+  right: -100%;
+  text-align: center;
+  transition: all 0.5s;
+  z-index: 9;
+}
+.header__mobile.active {
+  right: 0;
+}
+
+.header__mobile li {
+  display: block;
+  margin: 30px 0;
+  line-height: 30px;
+}
+
+.header__mobile a {
+  font-size: 20px;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.header__a:hover,
+.header__a.active {
+  color: var(--primary-color-light);
+}
+/*                */
+
+.header__menu {
+  display: none;
+}
+
+.header__social {
+  display: none;
+}
+
+/* TABLET */
+@media (min-width: 700px) {
+  header, .header__container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .header__logo {
+    margin-left: 40px;
+  }
+
+  .header__toggle {
+    display: none;
+  }
+
+  .checkbtn {
+    display: none;
+  }
+
+  .header__mobile {
+    display: none;
+  }
+
+  .header__menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__menu li {
+    margin: 0 10px;
+    font-size: var(--h3--font-size);
+  }
+
+  .header__a {
+    position: relative;
+    padding: 0.5rem;
+    color: #dbdbdb;
+    font-size: 1.8rem;
+    font-weight: 500;
+    font-family: var(--font-secondary);
+    transition: all 0.3s ease-in-out;
+  }
+  .header__a:hover {
+    color: var(--text-color);
+  }
+
+  .header__menu li {
+    transition: transform 0.4s ease;
+  }
+  .header__menu li:hover {
+    transform: scale(1.10);
+    transition: transform 0.2s ease;
+  }
+
+  .header__cv {
+    padding: 5px 12px;
+    border: 2px ridge var(--text-color);
+    border-radius: 10px;
+    background: var(--bg-color);
+    backdrop-filter: blur(20px);
+    box-shadow: 1px 1px 2px var(--border-color),
+                1px 1px 2px var(--border-color);
+    color: var(--text-color);
+    transition: box-shadow 1s;
+  }
+  .header__cv:hover {
+    background: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+    box-shadow: 0px 0px 5px var(--text-color),
+                0px 0px 5px var(--text-color);
+    transition: box-shadow 0.5s;
+  }
+
+  .header__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40px;
+  }
+  .header__social li{
+    margin: 0 10px;
+    font-size: var(--h3--font-size);
+  }
+  .fa-linkedin-in,
+  .fa-github {
+    color: #dbdbdb;
+    transition: transform 0.4s ease;
+  }
+  .fa-linkedin-in:hover,
+  .fa-github:hover {
+    color: var(--text-color);
+    transform: scale(1.20);
+    transition: transform 0.2s ease;
+    text-shadow: 
+      0 0 3px var(--primary-color-light),
+      0 0 5px var(--primary-color-light),
+      0 0 5px var(--primary-color-light);
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1010px) {
+  header, .header__container {
+    max-width: 1100px;
+  }
+  .header__a {
+    padding: 1rem;
+  }
+}
