@@ -1,8 +1,10 @@
+import { Link } from 'react-router-dom';
+
 import './Projects.css';
 
-const Card = ({ img, title, description, link, tools}) => {
+const Card = ({ id, img, title, description, link, tools }) => {
     return (
-        <a href={link} target="_blank" className="proyectos__card">
+        <Link to={`/projects/${id}`} className="proyectos__card">
             <div className="proyectos__img">
                 <img src={img} alt={title} className="card__img" />
             </div>
@@ -15,7 +17,7 @@ const Card = ({ img, title, description, link, tools}) => {
                     ))}
                 </ul>
             </div>
-        </a>
+        </Link>
     )
 }
 

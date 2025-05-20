@@ -1,0 +1,203 @@
+/* 
+==========================
+    ProjectsPage.jsx 
+==========================
+*/
+
+.proyectos__description {
+    font-size: 1.8rem;
+}
+.proyectos__description {
+    margin-bottom: 32px;
+}
+.proyectos__description span {
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+.proyectos__grid--all .proyectos__card{
+    display: block;
+}
+.proyectos__regresar {
+    margin-bottom: 96px;
+}
+
+/* 
+==========================
+    ProjectsDetail.jsx 
+==========================
+*/
+
+.proyectos__header {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.proyectos-detalle__img {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+}
+.proyectos-detalle__title {
+    font-size: var(--h2--font-title);
+    font-weight: bold;
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+    margin: 16px 0;
+}
+
+.proyectos-detalle__ul {
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+}
+.proyectos-detalle__ul li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 1.4rem;
+}
+
+.proyectos-detalle__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: white;
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+    text-decoration: none;
+    transition: text-decoration 2.5s ease;
+}
+.proyectos-detalle__link:hover {
+    text-decoration: underline;
+    transition: text-decoration 2.5s ease-out;
+}
+
+.proyectos-detalle__main {
+    margin: 0 auto;
+}
+
+.proyectos-detalle__blockquote {
+    margin-bottom: 3rem;
+    padding: 1.5rem;
+    background: hsla(0, 0%, 100%, .178);
+    border-radius: 12px;
+    border-left: 5px solid var(--border-color);
+    font-size: 1.6rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.proyectos-detalle__subtitle {
+    font-size: 2.6rem;
+    margin: 10px 0;
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+
+.proyectos-detalle__p {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+    line-height: 30px;
+}
+
+.proyectos-detalle__features {
+    margin-bottom: 2rem;
+    padding-left: 1.2rem;
+}
+.proyectos-detalle__features li {
+    font-size: 1.6rem;
+    line-height: 25px;
+    list-style-type: disc;
+}
+.proyectos-detalle__features li::marker,
+.proyectos-detalle__features li strong {
+    color: var(--text-color);
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+}
+
+.proyectos-detalle__gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+.proyectos-detalle__gallery img {
+    flex-grow: 1;
+    width: 100%;
+    margin: 10px 10px 10px 0;
+}
+.proyectos-detalle__gallery img:nth-child(n+2) {
+    width: calc(50% - 5px);
+}
+.proyectos-detalle__gallery img:last-child {
+    margin-right: 0;
+}
+
+.proyectos-detalle__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 30px 0;
+    font-size: 1.6rem;
+    table-layout: fixed;
+}
+.proyectos-detalle__table thead tr {
+    color: var(--text-color);
+    text-shadow: 
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color-light);
+
+}
+.proyectos-detalle__table th,
+.proyectos-detalle__table td {
+    border: 1px solid var(--border-color);
+    padding: 10px 20px;
+    white-space: normal;
+}
+
+
+/* Página no encontrada */
+.proyectos__error404 {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+}
+
+@media (min-width: 700px) {
+    .proyectos-detalle__ul {
+        flex-direction: row;
+    }
+}
+
+@media (min-width: 1010px) {
+  .proyectos__header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+  }
+  .proyectos-detalle__img {
+    width: 25%;
+    height: auto;
+  }
+}

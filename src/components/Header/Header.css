@@ -79,11 +79,14 @@ header.blur {
   line-height: 30px;
 }
 
-.header__mobile a {
+.header__mobile a,
+.header__mobile button {
   font-size: 20px;
+  background: transparent;
   color: var(--text-color);
   text-decoration: none;
   transition: color 0.3s ease;
+  cursor: pointer;
 }
 
 .header__a:hover,
@@ -136,11 +139,13 @@ header.blur {
   .header__a {
     position: relative;
     padding: 0.5rem;
+    background: transparent;
     color: #dbdbdb;
     font-size: 1.8rem;
     font-weight: 500;
     font-family: var(--font-secondary);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
   }
   .header__a:hover {
     color: var(--text-color);

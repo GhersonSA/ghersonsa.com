@@ -1,24 +1,19 @@
 import Header from './components/Header/Header'
-import Hero from './components/Hero/Hero'
-import Projects from './components/Projects/Projects'
-import Experience from './components/Experience/Experience';
-import About from './components/About/About';
-import Certificates from './components/Certificates/Certificates';
-import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 
+import ScrollToTop from './hooks/ScrollToTop';
+
 import './styles/main.css'
+import { Outlet } from 'react-router-dom';
 
 function App() {
   return (
     <>
+      <ScrollToTop />
       <Header />
-      <Hero />
-      <Projects />
-      <Experience />
-      <About />
-      <Certificates />
-      <Contact />
+        <main>
+          <Outlet />
+        </main>
       <Footer />
     </>
   )
