@@ -30,7 +30,7 @@ const ProjectDetail = () => {
     <section className="proyectos">
       <div className="proyectos__container">
         <div className="proyectos__header">
-          <img src="/src/assets/images/dip-responsive-design.jpg" alt="" className="proyectos-detalle__img" />
+          <img src={project.img} alt="" className="proyectos-detalle__img" />
           <div>
             <h2 className="proyectos-detalle__title">{project.title}</h2>
             <ul className="proyectos-detalle__ul">

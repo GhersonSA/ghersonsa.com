@@ -7,10 +7,10 @@ import './ProjectsPage.css';
 const AllProjectsPage = () => {
     return (
       <section className="proyectos">
-        <div>
-          {/* <img src="/src/assets/images/dip-responsive-design.jpg" alt="" /> */}
-        </div>
         <div className="proyectos__container">
+          <div className="proyectos__hero">
+             <img src="/src/assets/images/proyectosHero-dark.jpg" alt="proyectos__hero--img" className="proyectos__hero--img"/> 
+          </div>
           <h2 className='h2-title'>Todos mis proyectos</h2>
           <p className="proyectos__description">Explora una <span>colección única de proyectos</span> inspirados en la <span>vida cotidiana y transformados en tecnología innovadora.</span> Cada pieza refleja creatividad, dedicación y funcionalidad, mostrando cómo las <span>ideas simples pueden convertirse en soluciones únicas y significativas.</span></p>
           <div className='proyectos__grid proyectos__grid--all'>
