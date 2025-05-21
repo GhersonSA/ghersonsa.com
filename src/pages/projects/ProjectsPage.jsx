@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import Card from '../../components/Projects/Card';
 import { projects } from '../../data/projectsData';
-import { proyectHero } from '../../assets/images/proyectosHero-dark.jpg';
+import proyectHero from '../../assets/images/proyectosHero-dark.jpg';
 import '../../components/Projects/Projects.css';
 import './ProjectsPage.css';
 
