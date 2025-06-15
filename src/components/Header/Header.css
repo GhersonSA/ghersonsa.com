@@ -63,27 +63,34 @@ header.blur {
   height: 100vh;
   background: rgba(17, 0, 61, 0.521);
   backdrop-filter: blur(10px);
-  top: 67px;
+  top: 0;
+  padding-top: 75px;
+  padding-left: 35px;
   right: -100%;
-  text-align: center;
   transition: all 0.5s;
-  z-index: 9;
+  z-index: -1;
 }
 .header__mobile.active {
   right: 0;
 }
 
+.header__mobile h2 {
+  color: var(--hover-border-color);
+}
 .header__mobile li {
   display: block;
-  margin: 30px 0;
-  line-height: 30px;
+  margin: 20px 0;
+  padding-left: 12px;
+  line-height: 20px;
+  list-style-type: circle;
 }
 
 .header__mobile a,
 .header__mobile button {
-  font-size: 20px;
+  font-size: 18px;
   background: transparent;
   color: var(--text-color);
+  font-weight: bold;
   text-decoration: none;
   transition: color 0.3s ease;
   cursor: pointer;
@@ -92,6 +99,21 @@ header.blur {
 .header__a:hover,
 .header__a.active {
   color: var(--primary-color-light);
+}
+
+.header__mobile-perfil {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.header__mobile-perfil img {
+  margin-right: 15px;
+  object-fit: contain;
+  mask-image: linear-gradient(to top, transparent 0%, black 20%);
+  mask-composite: intersect;
+}
+.linkedin__mobile {
+  margin-right: 15px;
 }
 /*                */
 

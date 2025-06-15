@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import useNavigateAndScroll from '../../hooks/useNavigateAndScroll';
 import g_light from '../../assets/images/G-light.png';
+import img__light from '../../assets/images/perfil-light.png';
 import './Header.css';
 
 const Header = () => {
@@ -36,21 +37,29 @@ const Header = () => {
 
                  {/* Menú de móvil */}
                 <ul className={`header__mobile ${isMenuOpen ? 'active' : ''}`}>
+                <div className="header__mobile-perfil">
+                    <img src={img__light} alt="" width="65" height="75" />
+                    <div>
+                        <h2>Gherson Sánchez</h2>
+                        <h3>Desarrollador Web</h3>
+                    </div>
+                </div>
+                <h2>- Menu -</h2>
                 <li><Link to="/" onClick={(e) => { handleScrollToTop(e, '/'); toggleMenu(); }}  className="header__a">Inicio</Link></li>
                 <li><Link to="/projects" onClick={() => { window.scrollTo(0, 0); toggleMenu(); }} className="header__a">Proyectos</Link></li>
                 <li><button onClick={() => { navigateAndScroll('about'); toggleMenu(); }} className="header__a">Sobre mí</button></li>
                 <li><button onClick={() => { navigateAndScroll('formulario'); toggleMenu(); }} className="header__a">Contacto</button></li>
-                <li><a className="header__cv" href="../../../public/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" onClick={toggleMenu}>CV <i className="fa-regular fa-file"></i></a></li>
+                <h2>- Social -</h2>
                 <li>
                     <a href="https://www.linkedin.com/in/gherson-sa/" target="_blank" aria-label="LinkedIn">
-                        <i className="fa-brands fa-linkedin-in"></i>
+                        <i className="fa-brands fa-linkedin-in linkedin__mobile"></i>
                     </a>
-                </li>
-                <li>
                     <a href="https://github.com/GhersonSA" target="_blank" aria-label="GitHub">
-                    <i className="fa-brands fa-github"></i>
+                        <i className="fa-brands fa-github"></i>
                     </a>
                 </li>
+                <h2>- Currículum -</h2>
+                <li><a className="header__cv" href="../../../public/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" onClick={toggleMenu}>CV <i className="fa-regular fa-file"></i></a></li>
                 </ul>
                 {/* */}
 

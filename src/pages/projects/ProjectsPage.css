@@ -145,9 +145,9 @@
 .proyectos-detalle__features li strong {
     color: var(--text-color);
     text-shadow: 
-        0 0 5px var(--primary-color-light),
-        0 0 5px var(--primary-color-light),
-        0 0 5px var(--primary-color-light);
+        0 0 2px var(--secondary-color),
+        0 0 2px var(--secondary-color),
+        0 0 2px var(--secondary-color);
 }
 
 .proyectos-detalle__gallery {
