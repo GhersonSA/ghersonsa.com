@@ -44,12 +44,12 @@ const Header = () => {
                         <h3>Desarrollador Web</h3>
                     </div>
                 </div>
-                <h2>- Menu -</h2>
+                <h2 className="header__mobile-h2">- Menu -</h2>
                 <li><Link to="/" onClick={(e) => { handleScrollToTop(e, '/'); toggleMenu(); }}  className="header__a">Inicio</Link></li>
                 <li><Link to="/projects" onClick={() => { window.scrollTo(0, 0); toggleMenu(); }} className="header__a">Proyectos</Link></li>
                 <li><button onClick={() => { navigateAndScroll('about'); toggleMenu(); }} className="header__a">Sobre mí</button></li>
                 <li><button onClick={() => { navigateAndScroll('formulario'); toggleMenu(); }} className="header__a">Contacto</button></li>
-                <h2>- Social -</h2>
+                <h2 className="header__mobile-h2">- Social -</h2>
                 <li>
                     <a href="https://www.linkedin.com/in/gherson-sa/" target="_blank" aria-label="LinkedIn">
                         <i className="fa-brands fa-linkedin-in linkedin__mobile"></i>
@@ -58,7 +58,7 @@ const Header = () => {
                         <i className="fa-brands fa-github"></i>
                     </a>
                 </li>
-                <h2>- Currículum -</h2>
+                <h2 className="header__mobile-h2">- Currículum -</h2>
                 <li><a className="header__cv" href="../../../public/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" onClick={toggleMenu}>CV <i className="fa-regular fa-file"></i></a></li>
                 </ul>
                 {/* */}

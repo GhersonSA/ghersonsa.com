@@ -64,7 +64,7 @@ header.blur {
   background: rgba(17, 0, 61, 0.521);
   backdrop-filter: blur(10px);
   top: 0;
-  padding-top: 75px;
+  padding-top: 100px;
   padding-left: 35px;
   right: -100%;
   transition: all 0.5s;
@@ -101,16 +101,25 @@ header.blur {
   color: var(--primary-color-light);
 }
 
+.header__mobile-h2 {
+  margin: 25px 0;
+}
 .header__mobile-perfil {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .header__mobile-perfil img {
   margin-right: 15px;
   object-fit: contain;
   mask-image: linear-gradient(to top, transparent 0%, black 20%);
   mask-composite: intersect;
+}
+.header__mobile-perfil h2 {
+  font-size: 18px;
+}
+.header__mobile-perfil h3 {
+  font-size: 14px;
 }
 .linkedin__mobile {
   margin-right: 15px;
@@ -123,6 +132,19 @@ header.blur {
 
 .header__social {
   display: none;
+}
+@media (min-width: 500px) {
+    .header__mobile-perfil {
+        justify-content: center;
+    }
+
+    .header__mobile li {
+      text-align: center;
+    }
+
+    .header__mobile h2 {
+      text-align: center;
+    }
 }
 
 /* TABLET */
