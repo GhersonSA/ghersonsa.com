@@ -42,6 +42,7 @@ const Header = () => {
                     <div>
                         <h2>Gherson Sánchez</h2>
                         <h3>Desarrollador Web</h3>
+                        <h4>Disponible para trabajar</h4>
                     </div>
                 </div>
                 <h2 className="header__mobile-h2">- Menu -</h2>
