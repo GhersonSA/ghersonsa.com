@@ -1,8 +1,12 @@
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { useTheme } from '../../context/ThemeContext';
 import './About.css';
 import g__photo from '../../assets/images/img-light.png';
+import g__photo2 from '../../assets/images/img-dark.png';
 
 const About = () => {
+
+    const { darkMode } = useTheme();
 
     const [sectionRef, isVisible] = useIntersectionObserver();
 
@@ -12,8 +16,8 @@ const About = () => {
                 <h2 className="h2-title">Sobre mí</h2>
                 <div className="sobre-mi__card">
                     <div className="sobre-mi__img">
-                        <span className="g-photo__mobile"></span>
-                        <img src={g__photo} alt="g-photo__desktop" className={`g-photo__desktop left__animation ${isVisible ? "visible" : ""}`} />
+                        <span className={`g-photo__mobile ${darkMode ? "dark" : "light"}`}></span>
+                        <img src={darkMode ? g__photo : g__photo2} alt="g-photo__desktop" className={`g-photo__desktop left__animation ${isVisible ? "visible" : ""}`} />
                     </div>
                     <div className="sobre-mi__section">
                         <div className="section__container">

@@ -21,9 +21,9 @@
 .sobre-mi__card {
     position: relative;
     padding: 10px;
-    background: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
-    border-top: 3px solid #b05bff3b;
-    border-bottom: 3px solid #b05bff3b;
+    background: var(--about-bg);
+    border-top: 3px solid var(--about-border);
+    border-bottom: 3px solid var(--about-border);
     border-radius: 40px;
     overflow: hidden;
     animation: bordeColor 2s linear infinite;
@@ -31,13 +31,13 @@
 
 @keyframes bordeColor {
     0% {
-        border-color: #b05bff3b;
+        border-color: var(--about-border);
     }
     50% {
-        border-color: #b05bff4d;
+        border-color: var(--hover-about-border);
     }
     100% {
-        border-color: #b05bff3b;
+        border-color: var(--about-border);
     }
 }
 
@@ -57,15 +57,28 @@
     margin: 20px auto;
     width: 250px;
     height: 250px;
-    border: 10px ridge #ffffff;
+    border: 5px solid var(--text-color);
     border-radius: 50%;
     background: url('../../assets/images/perfil-light.png') no-repeat center center/cover;
-    background-color: #29024e9f;
+    background-color: var(--about-photo-bg);
     box-shadow: 
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
     object-fit: cover;
+}
+.g-photo__mobile.dark {
+    background-image: url('../../assets/images/perfil-light.png');
+}
+.g-photo__mobile.light {
+    background-image: url('../../assets/images/perfil-dark.png');
+}
+
+body.light .g-photo__mobile {
+    box-shadow: 
+        0 0 5px var(--hover-header),
+        0 0 5px var(--hover-header),
+        0 0 5px var(--hover-header);
 }
 .g-photo__desktop {
     display: none;
@@ -86,6 +99,7 @@
 }
 
 .sobre-mi__profesion {
+    color: var(--neutral-light);
     font-size: clamp(1rem, 5vw, 2rem);
     text-align: center;
     text-shadow: 
@@ -93,7 +107,12 @@
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
 }
-
+body.light .sobre-mi__profesion {
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color);
+}
 .sobre-mi__disponibilidad {
     width: fit-content;
     background: transparent;
@@ -101,8 +120,8 @@
     margin-top: 5px;
     margin-bottom: 32px;
     padding: 5px;
-    border: 2px solid #beffbe;
-    color: #beffbe;
+    border: 2px solid var(--about-exp-color);
+    color: var(--about-exp-color);
     border-radius: 20px;
     text-align: center;
     animation: cambioColor 2s linear infinite;
@@ -110,21 +129,21 @@
 
 @keyframes cambioColor {
     0% {
-        color: #beffbe;
-        border-color: #beffbe;
+        color: var(--neutral-light);
+        border-color: var(--neutral-light);
         box-shadow: 
-            0 0 5px #beffbe,
-            0 0 5px #beffbe,
-            0 0 5px #beffbe;
+            0 0 5px var(--text-color),
+            0 0 5px var(--text-color),
+            0 0 5px var(--text-color);
     }
     50% {
-        color: #5bff5ba9;
-        border-color: #5bff5ba9;
+        color: var(--about-change);
+        border-color: var(--about-change);
 
     }
     100% {
-        color: #beffbe;
-        border-color: #beffbe;
+        color: var(--neutral-light);
+        border-color: var(--neutral-light);
     }
 }
 
@@ -133,10 +152,18 @@
     margin: 16px 0 0;
 }
 .sobre-mi__p span {
+    color: var(--neutral-light);
     text-shadow: 
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
+}
+
+body.light .sobre-mi__p span {
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color); 
 }
 
 .sobre-mi__float-1,
@@ -162,8 +189,8 @@
 }
 .skills__container span div{
     width: fit-content;
-    background-color: #2e325c7a;
-    color: white;
+/*  background-color: var(--about-li); */
+    color: var(--text-color);
     padding: 5px 10px;
     border-radius: 3px;
     font-size: 1.2rem;
@@ -190,7 +217,7 @@
 .css {
     background-color: #2965f138;
 }
-.js {
+.javascript {
     background-color: #f0db4f38;
 }
 .react {
@@ -295,11 +322,11 @@
         display: block;
         position: absolute;
         font-size: 1.3rem;
-        color: #beffbe;
+        color: var(--about-exp-color);
         text-shadow: 
-            0 0 1px #0f0,
-            0 0 1px #0f0,
-            0 0 1px #0f0;
+            0 0 1px var(--secondary-color),
+            0 0 1px var(--secondary-color),
+            0 0 1px var(--secondary-color);
     }
     .sobre-mi__float-1 {
         top: 105px;
@@ -315,7 +342,7 @@
     @keyframes float-1__animation {
         0%, 100% {
             transform: translateY(0);
-            color: #ffffff;
+            color: var(--text-color);
             text-shadow: 
                 0 0 5px var(--primary-color-light),
                 0 0 5px var(--primary-color-light),
@@ -323,18 +350,18 @@
         }
         50% {
             transform: translateY(0px) translateX(-5px);
-            color: #beffbe;
+            color: var(--text-color);
             text-shadow: 
-                0 0 1px #0f0,
-                0 0 1px #0f0,
-                0 0 1px #0f0;
+                0 0 1px var(--secondary-color),
+                0 0 1px var(--secondary-color),
+                0 0 1px var(--secondary-color);
         }
     }
 
     @keyframes float-2__animation {
         0%, 100% {
             transform: translateY(0);
-            color: #ffffff;
+            color: var(--text-color);
             text-shadow: 
                 0 0 5px var(--primary-color-light),
                 0 0 5px var(--primary-color-light),
@@ -342,11 +369,11 @@
         }
         50% {
             transform: translateY(0px) translateX(-5px);
-            color: #beffbe;
+            color: var(--text-color);
             text-shadow: 
-                0 0 1px #0f0,
-                0 0 1px #0f0,
-                0 0 1px #0f0;
+                0 0 1px var(--secondary-color),
+                0 0 1px var(--secondary-color),
+                0 0 1px var(--secondary-color);
         }
     }
 

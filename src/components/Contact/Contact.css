@@ -33,7 +33,7 @@
     max-width: 600px;
     height: 575px;
     max-height: 600px;
-    background: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+    background: var(--form-2-bg);
     border: 5px ridge rgb(255, 255, 255);
     border-radius: 20px;
     box-shadow: 
@@ -47,9 +47,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #232427;
+    background: var(--form-chat-bg);
     background: var(--container-color);
-    border-bottom: 1px solid #b05bff3b;
+    border-bottom: 1px solid var(--form-border);
     border-radius: 20px 20px 0px 0px;
 }
 .form__chat div {
@@ -97,21 +97,21 @@
 
 @keyframes text__animation {
     0% {
-        color: #ffffff;
+        color: var(--neutral-light);
         text-shadow: 
             0 0 5px var(--primary-color-light),
             0 0 5px var(--primary-color-light),
             0 0 5px var(--primary-color-light);
     }
     50% {
-        color: #beffbe;
+        color: var(--about-exp-color);
         text-shadow: 
-            0 0 1px #0f0,
-            0 0 1px #0f0,
-            0 0 1px #0f0;
+            0 0 1px var(--secondary-color),
+            0 0 1px var(--secondary-color),
+            0 0 1px var(--secondary-color);
     }
     100% {
-        color: #ffffff;
+        color: var(--neutral-light);
         text-shadow: 
             0 0 5px var(--primary-color-light),
             0 0 5px var(--primary-color-light),
@@ -148,12 +148,20 @@
     font-size: 2.5rem;
 }
 .form__name h4 {
+    color: var(--neutral-light);
     text-align: center;
     font-size: 2rem;
     text-shadow: 
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
+}
+
+body.light .form__name h4 {
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color);
 }
 
 .form__social {
@@ -186,10 +194,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: var(--neutral-light);
     border: 1px solid rgba(255, 255, 255, 0.26);
     border-radius: 10px;
-    color: black;
+    color: var(--neutral-dark);
     margin-right: 20px;
     margin-left: 5px; 
     padding: 0 10px;
@@ -205,7 +213,7 @@
     flex-direction: column;
     align-items: end;
     margin-top: 20px;
-    color: white;
+    color: var(--neutral-light);
 }
 
 .form__group div {
@@ -215,7 +223,7 @@
     display: flex;
     align-items: center;
     padding: 0 10px;
-    background-color: rgba(56, 0, 121, 0.541);
+    background-color: var(--form-message);
     border-radius: 10px;
     font-size: clamp(1.2rem, 4vw, 1.6rem);
 }
@@ -225,11 +233,11 @@
     height: 50px;
     background: transparent;
     margin-left: 10px;
-    color: #C1C1C1;
+    color: var(--form-text);
 }
 
 .form__group div i {
-    color: #C1C1C1;
+    color: var(--form-text);
 }
 
 .form__message-2 {
@@ -243,10 +251,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: white;
+    background: var(--neutral-light);
     border: 1px solid rgba(255, 255, 255, 0.26);
     border-radius: 10px;
-    color: black;
+    color: var(--neutral-dark);
     margin-right: 20px;
     margin-left: 5px; 
     padding: 0 10px;
@@ -270,7 +278,7 @@
     justify-content: center;
     align-items: center;
     background: var(--container-color);
-    border-top: 1px solid #b05bff3b;
+    border-top: 1px solid var(--form-border);
     border-radius: 0px 0px 20px 20px;
 }
 .submit__button {
@@ -280,8 +288,8 @@
     gap: 5px;
     width: 200px;
     height: 30px;
-    background-color: rgba(56, 0, 121, 0.541);
-    color: var(--text-color);
+    background-color: var(--form-message);
+    color: var(--neutral-light);
     border-radius: 10px;
     font-size: 1.6rem;
     font-weight: 500;
@@ -289,7 +297,7 @@
     transition: all 0.2s ease-in;
 }
 .submit__button:hover {
-    background-color: rgb(57, 0, 121);
+    background-color: var(--hover-form-message);
     transform: scale(1.10);
 }
 
@@ -379,8 +387,8 @@
         align-items: center;
         height: 600px;
         width: 400px;
-        background: linear-gradient(to right,#63636315, #0000005b);
-        border: 5px ridge rgb(255, 255, 255);
+        background: var(--form-1-bg);
+        border: 5px ridge var(--neutral-light);
         border-radius: 20px;
         box-shadow: 
             0 0 5px var(--text-color),
@@ -391,9 +399,7 @@
         height: 600px;
         width: 400px;
         position: absolute;
-        background: #0000009c;
-        background: #50505010;
-        background: #fafafa10;
+        background: var(--form-blur);
         backdrop-filter: blur(5px) saturate(120%);
         border-radius: 20px;
         z-index: -1;
@@ -403,7 +409,7 @@
         border-left: 0;
     }
     .form__img {
-        border: 10px ridge white;
+        border: 10px ridge var(--neutral-light);
         border-radius: 50%;
         box-shadow: 
             0 0 5px var(--text-color),

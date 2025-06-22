@@ -1,0 +1,62 @@
+@import "../../styles/main.css";
+
+.toggle-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.fa-circle-half-stroke,
+.fa-moon,
+.sun {
+    color: var(--header-mobile-i);
+    transition: transform 0.4s ease;
+}
+
+.fa-circle-half-stroke:hover,
+.fa-moon:hover,
+.sun:hover {
+    color: var(--text-color);
+    transform: scale(1.20);
+    transition: transform 0.2s ease;
+    /*
+    text-shadow: 
+      0 0 3px var(--primary-color-light),
+      0 0 5px var(--primary-color-light),
+      0 0 5px var(--primary-color-light);
+    */
+}
+.sun {
+    margin-top: 3px;
+    width: 25px;
+    height: 25px;
+}
+/*
+body.light .fa-lightbulb,
+body.light .fa-moon {
+    color: var(--neutral-light);
+    text-shadow: 
+      0 0 3px var(--header-mobile-i),
+      0 0 5px var(--header-mobile-i),
+      0 0 5px var(--header-mobile-i);
+}
+
+body.light .fa-lightbulb:hover,
+body.light .fa-moon:hover {
+    color: var(--neutral-light);
+    text-shadow: 
+      0 0 3px var(--primary-color-light),
+      0 0 5px var(--primary-color-light),
+      0 0 5px var(--primary-color-light);
+}
+*/
+.toggle-button input {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .sun {
+        width: 20px;
+    }
+}

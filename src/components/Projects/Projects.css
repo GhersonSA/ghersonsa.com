@@ -40,14 +40,9 @@
 }
 .proyectos__card:hover {
     border-radius: 18px;
-    border-color: #ffffff96;
-    background: linear-gradient(135deg, 
-                    rgba(255, 255, 255, 0.302),
-                    rgba(0, 0, 0, 1) 90%,
-                    rgba(50, 50, 50, 0.7) 50%,
-                    rgba(0, 0, 0, 1) 70%,
-                    rgba(255, 255, 255, 0.302));
-    box-shadow: 0 0 0 1em rgba(255, 255, 255, 0);
+    border-color: var(--hover-container-border);
+    background: var(--hover-container-color);
+    box-shadow: 0 0 0 1em #ffffff00;
     transform: scale(0.98);
     animation: cardAnimacion 1.4s;
     filter: brightness(1.1);
@@ -91,7 +86,7 @@
             0 0 5px var(--primary-color-light),
             0 0 5px var(--primary-color-light),
             0 0 5px var(--primary-color-light);
-    color: var(--text-color);
+    color: var(--neutral-light);
     transition: text-shadow 0.3s ease;
 }
 .card__title:hover {
@@ -101,6 +96,23 @@
         0 0 40px #a75aff, 
         0 0 80px #c593ff;
 }
+
+body.light .card__title {
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color-light),
+        0 0 5px var(--primary-color);
+}
+
+body.light .card__title:hover {
+    text-shadow: 
+        0 0 10px #9b4dff, 
+        0 0 20px #8b40e7, 
+        0 0 40px #a75aff, 
+        0 0 80px #c593ff;
+}
+
+
 .card__description {
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -108,7 +120,7 @@
     line-clamp: 7;
     text-overflow: ellipsis;
     font-size: 1.4rem;
-    color: #c1c1c1;
+    color: var(--card-text);
     margin: 15px 0;
     font-family: var(--font-primary);
     overflow: hidden;
@@ -122,8 +134,8 @@
 }
 
 .card__li {
-    background-color: #2e325c7a;
-    color: white;
+    background-color: var(--card-li);
+    color: var(--text-color);
     padding: 5px 10px;
     border-radius: 3px;
     font-size: 1.2rem;

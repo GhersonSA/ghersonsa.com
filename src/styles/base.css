@@ -9,7 +9,7 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
-    scrollbar-color: var(--text-color) #232427;
+    scrollbar-color: var(--scrollbar) var(--bg-color-light);
     color: var(--text-color);
 }
 body {

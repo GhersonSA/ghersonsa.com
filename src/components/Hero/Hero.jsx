@@ -1,8 +1,12 @@
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
+import { useTheme } from '../../context/ThemeContext';
 import img__light from '../../assets/images/perfil-light.png';
+import img__dark from '../../assets/images/perfil-dark.png';
 import './Hero.css';
 
 const Hero = () => {
+
+    const { darkMode } = useTheme();
 
     const [sectionRef, isVisible] = useIntersectionObserver();
 
@@ -66,7 +70,7 @@ const Hero = () => {
                     </li>
                 </div>
                 <div className="hero__photo">
-                    <img width="280" height="340" className="hero__img" src={img__light} alt="photo__gherson" />
+                    <img width="280" height="340" className={`hero__img ${darkMode ? 'light__img' : 'dark__img'}`} src={darkMode ? img__light : img__dark} alt="photo__gherson" />
                 </div>
             </div>
             <div className="hero__footer">

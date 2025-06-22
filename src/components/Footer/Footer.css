@@ -15,7 +15,7 @@
     justify-content: center;
     margin: 0 10px;
     height: 68px;
-    background: #080808;
+    background: var(--header-footer-bg);
     border-radius: 50px 50px 0 0;
     border-top: 5px ridge #ffffff4d;
     transition: border-top 0.4s;

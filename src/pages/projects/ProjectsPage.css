@@ -32,6 +32,15 @@
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
 }
+
+body.light .proyectos__description span {
+    color: var(--neutral-light);
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color);
+}
+
 .proyectos__grid--all .proyectos__card{
     display: block;
 }
@@ -61,6 +70,7 @@
     height: auto;
 }
 .proyectos-detalle__title {
+    color: var(--neutral-light);
     font-size: var(--h2--font-title);
     font-weight: bold;
     text-shadow: 
@@ -90,7 +100,7 @@
     gap: 0.5rem;
     font-weight: bold;
     font-size: 1.6rem;
-    color: white;
+    color: var(--neutral-light);
     text-shadow: 
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light),
@@ -110,7 +120,7 @@
 .proyectos-detalle__blockquote {
     margin-bottom: 3rem;
     padding: 1.5rem;
-    background: hsla(0, 0%, 100%, .178);
+    background: var(--blockquote);
     border-radius: 12px;
     border-left: 5px solid var(--border-color);
     font-size: 1.6rem;
@@ -118,12 +128,23 @@
 }
 
 .proyectos-detalle__subtitle {
+    color: var(--neutral-light);
     font-size: 2.6rem;
     margin: 10px 0;
     text-shadow: 
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
+}
+
+body.light .proyectos-detalle__title,
+body.light .proyectos-detalle__subtitle,
+body.light .proyectos-detalle__link,
+body.light .proyectos-detalle__table thead tr {
+    text-shadow: 
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color),
+        0 0 5px var(--primary-color);
 }
 
 .proyectos-detalle__p {
@@ -148,6 +169,15 @@
         0 0 2px var(--secondary-color),
         0 0 2px var(--secondary-color),
         0 0 2px var(--secondary-color);
+}
+
+body.light .proyectos-detalle__features li::marker,
+body.light .proyectos-detalle__features li strong {
+    color: var(--header-color);
+    text-shadow: 
+        0 0 2px var(--projects-li),
+        0 0 2px var(--projects-li),
+        0 0 2px var(--projects-li);
 }
 
 .proyectos-detalle__gallery {
@@ -175,7 +205,7 @@
     table-layout: fixed;
 }
 .proyectos-detalle__table thead tr {
-    color: var(--text-color);
+    color: var(--neutral-light);
     text-shadow: 
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light),

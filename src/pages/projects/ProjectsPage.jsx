@@ -1,16 +1,21 @@
 import { Link } from 'react-router-dom';
+import { useTheme } from '../../context/ThemeContext';
 import Card from '../../components/Projects/Card';
 import { projects } from '../../data/projectsData';
-import proyectHero from '../../assets/images/proyectosHero-dark.jpg';
+import projectHero__dark from '../../assets/images/proyectosHero-dark.jpg';
+import projectHero__light from '../../assets/images/proyectosHero-light.jpg';
 import '../../components/Projects/Projects.css';
 import './ProjectsPage.css';
 
 const AllProjectsPage = () => {
+
+    const { darkMode } = useTheme();
+
     return (
       <section className="proyectos">
         <div className="proyectos__container">
           <div className="proyectos__hero">
-             <img src={proyectHero} alt="proyectos__hero--img" className="proyectos__hero--img"/> 
+             <img  src={darkMode ? projectHero__dark : projectHero__light} alt="proyectos__hero--img" className="proyectos__hero--img"/> 
           </div>
           <h2 className='h2-title'>Todos mis proyectos</h2>
           <p className="proyectos__description">Explora una <span>colección única de proyectos</span> inspirados en la <span>vida cotidiana y transformados en tecnología innovadora.</span> Cada pieza refleja creatividad, dedicación y funcionalidad, mostrando cómo las <span>ideas simples pueden convertirse en soluciones únicas y significativas.</span></p>

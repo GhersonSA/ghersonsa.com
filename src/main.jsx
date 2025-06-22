@@ -11,8 +11,11 @@ import Contact from './components/Contact/Contact';
 import ProjectsPage from './pages/projects/ProjectsPage';
 import ProjectDetail from './pages/projects/ProjectDetail.jsx';
 
+import { ThemeProvider } from './context/ThemeContext.jsx';
+
 import App from './App.jsx'
 import '../src/styles/main.css';
+
 
 
 const router = createBrowserRouter([
@@ -33,6 +36,8 @@ const router = createBrowserRouter([
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </StrictMode>,
 )

@@ -93,7 +93,7 @@
 }
       
 .neon-text {
-    color: #f0eafd;
+    color: var(--hero-neon);
     text-align: center;
     text-transform: uppercase;
     text-shadow: 
@@ -104,10 +104,10 @@
 }
 .neon-text:hover {
     text-shadow: 
-        0 0 10px #9b4dff, 
-        0 0 20px #8b40e7, 
-        0 0 40px #a75aff, 
-        0 0 80px #c593ff;
+        0 0 10px var(--primary-color-light), 
+        0 0 20px var(--primary-color-light), 
+        0 0 40px var(--primary-color-light), 
+        0 0 80px var(--primary-color-light);
     transition: text-shadow 0.5s ease, transform 0.2s ease-in-out;
     transform: scaleX(1.05);
 }
@@ -120,14 +120,27 @@
     left: 0;
     width: 100%;
     pointer-events: none;
-
     /*
     .hero__img {
         object-fit: cover;
     } */
 }
-    
 
+.hero__img {
+    object-fit: cover;
+}
+
+.dark__img {
+    width: 100%;
+    height: 330px;
+}
+    
+@media (min-width: 500px) {
+    .dark__img {
+        width: 340px;
+        height: 350px;
+    }
+}
 @media (min-width: 540px) {
     .hero__container {
         flex-direction: row;
@@ -139,7 +152,7 @@
     .hero-left {
         width: 50%;
         transition: 0.2s ease-in-out;
-        background: linear-gradient(to left, #00000010 10%, rgb(0, 0, 0) 100%);
+        background: var(--hero-left);
     }
     .hero-left::before {
         content: "";
@@ -155,13 +168,13 @@
         background: url('./../../assets/images/hero-gif-left.gif') no-repeat center center/cover;
     }
     .hero-left:hover {
-        background: linear-gradient(270deg, #1d1d1d10 10%, rgb(0, 0, 0) 100%);
+        background: var(--hover-hero-left);
     }
     .hero-left:hover::before {
         opacity: 0.8;
     }
     .hero-left:hover h2 {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--hover-border-color);
     }
     
     .gherson {
@@ -174,8 +187,8 @@
 
     .G:hover, .H:hover, .E:hover, .R:hover, .S:hover, .O:hover, .N:hover {
         z-index: 2;
-        background: rgba(153, 0, 255, 0.404);
-        color: rgb(201, 201, 201);
+        background: var(--hero-name);
+        color: var(--text-color);
         transition: 0.2s ease-in-out;
         filter: brightness(1.1);
     }
@@ -190,7 +203,7 @@
     .hero-right {
         width: 50%;
         transition: 0.2s ease-in-out;
-        background: linear-gradient(to right, #00000010 10%, rgb(0, 0, 0) 100%);
+        background: var(--hero-right);
     }
     .hero-right::before {
         content: "";
@@ -205,14 +218,18 @@
         transition: 0.3s ease-in-out;
         background: url('./../../assets/images/hero-gif-right.gif') no-repeat center center/cover;
     }
+    body.light .hero-right::before,
+    body.light .hero-left::before {
+        filter: grayscale(80%) brightness(1.2);
+    }
     .hero-right:hover {
-        background: linear-gradient(to right, #1d1d1d10 10%, rgb(0, 0, 0) 100%);
+        background: var(--hover-hero-right);
     }
     .hero-right:hover::before {
         opacity: 0.8;
     }
     .hero-right:hover h2 {
-        color: rgba(255, 255, 255, 0.5);
+        color: var(--hover-border-color);
     }
 
     .sanchez {
@@ -225,8 +242,8 @@
     
     .S:hover, .A:hover, .N:hover, .C:hover, .H:hover, .E:hover, .Z:hover {
         z-index: 2;
-        background: rgba(153, 0, 255, 0.404);
-        color: rgb(201, 201, 201);
+        background: var(--hero-name);
+        color: var(--text-color);
         transition: 0.2s ease-in-out;
         filter: brightness(1.1);
     }
@@ -262,12 +279,22 @@
         font-weight: 600;
         color: var(--title-color);
         font-family: var(--font-secondary);
+        transition: transform 0.2s ease-in-out;
     }
     .hero__footer a:hover {
         text-shadow: 
         0 0 3px var(--primary-color-light),
         0 0 5px var(--primary-color-light),
         0 0 5px var(--primary-color-light);
+        transform: scale(1.05);
+    }
+
+
+    body.light .hero__footer a:hover {
+        text-shadow: 
+            0 0 0px var(--hover-header),
+            0 0 0px var(--hover-header),
+            0 0 0px var(--hover-header);
     }
 
     .hero__footer i {
@@ -325,8 +352,8 @@
     .hero__github {
         padding: 8px 16px;
         border-radius: 20px;
-        background: linear-gradient(to right, #f8fafc38, #f1f5f918); /* Fondo degradado claro */
-        border: 1px solid rgba(255, 255, 255, 0.192);
+        background: var(--hero-social);
+        border: 1px solid var(--hover-border-social);
         transition: transform 0.2s ease-in-out;
     }
     .hero__github {
@@ -339,9 +366,18 @@
         bottom: 20px;
         padding: 6px 16px;
         border-radius: 20px;
-        background: linear-gradient(to right, #f8fafc38, #f1f5f918); /* Fondo degradado claro */
-        border: 1px solid rgba(255, 255, 255, 0.192);
+        background: var(--hero-social);
+        border: 1px solid var(--hover-border-social);
         transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    }
+
+    body.light .hero__linkedin,
+    body.light .hero__github,
+    body.light .hero__email {
+        text-shadow: 
+            0 0 3px var(--hover-header),
+            0 0 5px var(--hover-header),
+            0 0 5px var(--hover-header);
     }
     .hero__linkedin:hover,
     .hero__github:hover,
@@ -353,12 +389,17 @@
     .hero__email--p {
         font-size: large;
         color: white;
-        transition: transform 0.2s ease-in-out; /* Transición para hover */
+        transition: transform 0.2s ease-in-out;
         z-index: 1;
     }
 
     .hero__img {
         width: 425px;
+        height: 520px;
+    }
+
+    .dark__img {
+        width: 500px;
         height: 520px;
     }
 

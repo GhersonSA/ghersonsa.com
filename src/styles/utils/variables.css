@@ -3,27 +3,95 @@
 @import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap");
 
 :root {
-/*========== Colors ==========*/
+/*========== Colors Dark Theme ==========*/
 --primary-color: #3f0079;
 --primary-color-light: #8400ff;
 --secondary-color: #0f0;
 
+/*====== BASE ======*/
 --text-color: #fff;
---text-color-dark: #000;
+
+--scrollbar: #fff;
 
 --bg-color: #000;
 --bg-color-light: #232427;
---header-footer-bg: #080808;
+
+--h2-title: #ffffff33;
 
 --title-color: linear-gradient(180deg, #ffffff, #ffffff, #868686, #ffffff, #ffffff);
 
---container-color: linear-gradient(to right, #6363633f, #0000005b, #6363633f);
+--border-color: rgba(255, 255, 255, 0.404);
+--hover-border-color: #ffffff9a;
+
+--neutral-light: #fff;
+--neutral-dark: #000;
+
+/*====== HEADER ======*/
+--header-footer-bg: #080808;
+--header-color: #dbdbdb;
+--header-color-light: #8400ff;
+--header-color-secondary: #0f0;
+--header-mobile: #11003d85;
+--header-mobile-perfil: linear-gradient(to top, transparent 0%, black 20%);
+--header-mobile-perfil-h2: #ffffff9a;
+--header-mobile-i: #dbdbdb;
+--hover-header: #8400ff;
+--hover-header-cv: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+
+/*====== HERO ======*/
+--hero-title: linear-gradient(180deg, #ffffff, #ffffff, #868686, #ffffff, #ffffff);
+
+--hero-left: linear-gradient(to left, #00000010 10%, rgb(0, 0, 0) 100%);
+--hover-hero-left: linear-gradient(270deg, #1d1d1d10 10%, rgb(0, 0, 0) 100%);
+--hero-right: linear-gradient(to right, #00000010 10%, rgb(0, 0, 0) 100%);
+--hover-hero-right: linear-gradient(to right, #1d1d1d10 10%, rgb(0, 0, 0) 100%);
+
+--hero-neon: #f0eafd;
+--hero-name: #9900ff67;
+--hero-social: linear-gradient(to right, #f8fafc38, #f1f5f918);
+--hover-border-social: #ffffff31;
+
+--hero-border: radial-gradient(circle, #ffffff, #000000);
+
 --container-secondary: linear-gradient(to left, #000000b6 0%, #3f0079, #000000b6 100%);
 
---body-border: radial-gradient(circle, #ffffff5e, #0000005e);
---hero-border: radial-gradient(circle, #ffffff, #000000);
---border-color: rgba(255, 255, 255, 0.404);
---hover-border-color: rgba(255, 255, 255, 0.604);
+/*====== PROJECTS ======*/
+
+--container-color: linear-gradient(to right, #6363633f, #0000005b, #6363633f);
+--hover-container-color: linear-gradient(135deg, 
+                    rgba(255, 255, 255, 0.302),rgba(0, 0, 0, 1) 90%, rgba(50, 50, 50, 0.7) 50%,
+                    rgba(0, 0, 0, 1) 70%, rgba(255, 255, 255, 0.302));
+--hover-container-border: #ffffff96;
+--blockquote: #ffffff2d;
+
+--card-text: #c1c1c1;
+--card-li: #2e325c7a;
+--projects-li: #0f0;
+
+/*====== EXPERIENCE ======*/
+
+--time-color: #beffbe;
+
+/*====== ABOUT ======*/
+
+--about-bg: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+--about-border: #b05bff3b;
+--hover-about-border: #b05bff4d;
+--about-photo-bg: #29024e9f;
+--about-exp-color: #beffbe;
+--about-li: #2e325c7a;
+--about-change: #0f0;
+
+/*====== CONTACT ======*/
+
+--form-1-bg: linear-gradient(to right,#63636315, #0000005b);
+--form-2-bg: linear-gradient(to left, #000000b6 0%, #5600a55b, #000000b6 100%);
+--form-blur: #fafafa10;
+--form-chat-bg: #232427;
+--form-border: #b05bff3b;
+--form-message: #3800798a;
+--hover-form-message: #390079;
+--form-text: #C1C1C1;
 
 /*========== Typography ==========*/
 --font-primary: 'Syne', sans-serif;
@@ -49,4 +117,97 @@
 --breakpoint-tablet: 700px;
 --breakpoint-desktop: 1010px;
 */
+}
+
+body.light {
+    /*========== Colors Light Theme==========*/
+    --primary-color: #6200ee;
+    --primary-color-light: #a78bfa;
+    --secondary-color: #34d399;
+
+    /*====== BASE ======*/
+    --text-color: #000;
+
+    --scrollbar: #000;
+
+    --bg-color: #fff;
+    --bg-color-light: #f2f2f2;
+
+    --h2-title: #00000033;
+
+    --title-color: linear-gradient(180deg, #000000, #000000, #666666, #000000, #000000);
+
+    --border-color: rgba(0, 0, 0, 0.404);
+    --hover-border-color: rgba(0, 0, 0, 0.604);
+
+    --neutral-light: #fff;
+    --neutral-dark: #000;
+
+    /*====== HEADER ======*/
+    --header-footer-bg: #fff;
+    --header-color: #303030;
+    --header-color-light: #bdbdbd;
+    --header-color-secondary: #34d399;
+    --header-mobile: #d6d6d685;
+    --header-mobile-perfil: linear-gradient(to top, transparent 0%, black 20%);
+    --header-mobile-perfil-h2: #fff;
+    --header-mobile-i: #303030;
+    --hover-header: #8b8b8b;
+    --hover-header-cv: linear-gradient(to left, #929292b6 0%, #ffffff5b, #929292b6 100%);
+
+    /*====== HERO ======*/
+    --hero-title: linear-gradient(180deg, #ffffff, #ffffff, #868686, #ffffff, #ffffff);
+
+    --hero-left: linear-gradient(to left, #ffffff10 10%, rgb(255, 255, 255) 100%);
+    --hover-hero-left: linear-gradient(270deg, #e8e8e810 10%, rgb(255, 255, 255) 100%);
+    --hero-right: linear-gradient(to right, #ffffff10 10%, rgb(255, 255, 255) 100%);
+    --hover-hero-right: linear-gradient(to right, #e8e8e810 10%, rgb(255, 255, 255) 100%);
+
+    --hero-neon: #ffffff;
+    --hero-name: #9900ff67;
+    --hero-social: linear-gradient(to right, #0000007a, #0000005e);
+    --hover-border-social: #00000031;
+
+    --hero-border: radial-gradient(circle, #000000, #ffffff);
+
+    --container-secondary: linear-gradient(to left, #ffffffb6 0%, #30303080, #ffffffb6 100%);
+
+    /*====== PROJECTS ======*/
+
+    --container-color: linear-gradient(to right, #d9d9d93f, #ffffff5b, #d9d9d93f);
+    --hover-container-color: linear-gradient(135deg, 
+                    rgba(0, 0, 0, 0.302),rgb(255, 255, 255) 90%, rgba(77, 77, 77, 0.7) 50%,
+                    rgb(255, 255, 255) 70%, rgba(0, 0, 0, 0.302));
+    --hover-container-border: #00000096;
+    --blockquote: #9696962d;
+
+    --card-text: #242424;
+    --card-li: #dbdbdbc6;
+    --projects-li: #0f0;
+
+    /*====== EXPERIENCE ======*/
+
+    --time-color: #beffbe;
+
+    /*====== ABOUT ======*/
+
+    --about-bg: linear-gradient(to left, #ffffffb6 0%, #acacac80, #ffffffb6 100%);
+    --about-border: #0000003b;
+    --hover-about-border: #4747474d;
+    --about-photo-bg: #c7c7c79f;
+    --about-exp-color: #beffbe;
+    --about-li: #dbdbdbc6;
+    --about-change: #000;
+
+    /*====== CONTACT ======*/
+
+    --form-1-bg: linear-gradient(to right,#00000022, #ffffff5b);
+    --form-2-bg: linear-gradient(to left, #ffffffb6 0%, #acacac80, #ffffffb6 100%);
+    --form-blur: #fafafa10;
+    --form-chat-bg: #232427;
+    --form-border: #0000003b;
+    --form-message: #0000008a;
+    --hover-form-message: #acacac;
+    --form-text: #ffffff;
+
 }
