@@ -4,8 +4,8 @@ export const projects = [
     {
         id: "proyecto-1",
         img: CoPiloto,
-        link: "https://github.com/GhersonSA",
-        title: "CoPiloto (En progreso...)",
+        link: "https://copiloto-carpooling.vercel.app/",
+        title: "CoPiloto (Carpooling App)",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
         summary: "Carpooling App destinada a ayudar en la búsqueda de transporte compartido para ir al trabajo, conectándote desde el centro hasta polígonos industriales, llegando a los sectores más alejados de la ciudad. Permitiendo que los conductores generen ingresos extras ofreciendo asientos disponibles en sus recorridos diarios utilizando nuestra app.",
@@ -17,7 +17,7 @@ export const projects = [
             },
             {
                 title: "Autenticación segura",
-                text: "Posibilidad de iniciar sesión o probar la aplicación con el modo invitado (Demo)"
+                text: "Posibilidad de iniciar sesión o probar la aplicación con el modo invitado (Demo)."
             },
             {
                 title: "Búsqueda de transporte eficiente",
@@ -37,7 +37,7 @@ export const projects = [
             },
             {
                 title: "Responsive Design & Mobile First",
-                text: "Diseño adaptado a múltiples dispositivos. Interfaces limpias, jerarquía visual clara y navegación optimizada para pantallas pequeñas"
+                text: "Diseño adaptado a múltiples dispositivos. Interfaces limpias, jerarquía visual clara y navegación optimizada para pantallas pequeñas."
             }
         ],
         screenshots: [
