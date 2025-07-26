@@ -30,15 +30,22 @@ const ProjectDetail = () => {
     <section className="proyectos">
       <div className="proyectos__container">
         <div className="proyectos__header">
-          <img src={project.img} alt="" className="proyectos-detalle__img" />
+            <img src={project.img} alt="" className="proyectos-detalle__img" />
           <div>
-            <h2 className="proyectos-detalle__title">{project.title}</h2>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="proyectos-detalle__link">
+              <h2 className="proyectos-detalle__title">{project.title}</h2>
+            </a>
             <ul className="proyectos-detalle__ul">
               <li><i className="fa-solid fa-user-tie"></i> {project.cliente}</li>
               <li><i className="fa-solid fa-earth-americas"></i> {project.type}</li>
               <li><i className="fa-solid fa-screwdriver-wrench"></i> {project.tools.join(', ')}</li>
             </ul>
-            <a href={project.link} target="_blank" rel="noopener noreferrer" className="proyectos-detalle__link">Ir al sitio <i className="fa-solid fa-arrow-up-right-from-square"></i></a>
+            <a href={project.link} target="_blank" rel="noopener noreferrer" className="proyectos-detalle__link">
+              Ir al sitio <i className="fa-solid fa-arrow-up-right-from-square"></i>
+            </a>
+            <a href={project.repo} target="_blank" rel="noopener noreferrer" className="proyectos-detalle__link-2">
+              Ir al repositorio <i className="fa-brands fa-git-alt"></i>
+            </a>
           </div>
         </div>
         <main>

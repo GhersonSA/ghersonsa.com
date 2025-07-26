@@ -1,10 +1,16 @@
-import CoPiloto from "../assets/images/CoPiloto-preview.webp";
+import CoPiloto_Login from "../assets/images/CoPiloto-Login.webp";
+import CoPiloto_Home from "../assets/images/CoPiloto-Home.webp";
+import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
+import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
+import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
+
 
 export const projects = [
     {
         id: "proyecto-1",
-        img: CoPiloto,
+        img: CoPiloto_Login,
         link: "https://copiloto-carpooling.vercel.app/",
+        repo: "https://github.com/GhersonSA/CoPiloto-Carpooling-App",
         title: "CoPiloto (Carpooling App)",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -41,9 +47,11 @@ export const projects = [
             }
         ],
         screenshots: [
-            CoPiloto,
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
+            CoPiloto_Login,
+            CoPiloto_Home,
+            CoPiloto_Passengers,
+            CoPiloto_Payments,
+            CoPiloto_Mobile
         ],
         techDetails: [
             { tech: "React", use: "Diseño de componentes para el frontend" },
@@ -57,6 +65,7 @@ export const projects = [
     {
         id: "proyecto-2",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+        repo: "",
         link: "url del proyecto 2",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
@@ -93,6 +102,7 @@ export const projects = [
         id: "proyecto-3",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 3",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -128,6 +138,7 @@ export const projects = [
         id: "proyecto-4",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 4",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -163,6 +174,7 @@ export const projects = [
         id: "proyecto-5",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 5",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -198,6 +210,7 @@ export const projects = [
         id: "proyecto-6",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 6",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -233,6 +246,7 @@ export const projects = [
         id: "proyecto-7",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 7",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -268,6 +282,7 @@ export const projects = [
         id: "proyecto-8",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 8",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -303,6 +318,7 @@ export const projects = [
         id: "proyecto-9",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 9",
+        repo: "",
         title: "Próximamente...",
         cliente: "Proyecto personal", 
         type: "Aplicación web",

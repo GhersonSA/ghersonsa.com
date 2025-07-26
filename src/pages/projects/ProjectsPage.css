@@ -94,7 +94,8 @@ body.light .proyectos__description span {
     font-size: 1.4rem;
 }
 
-.proyectos-detalle__link {
+.proyectos-detalle__link,
+.proyectos-detalle__link-2 {
     display: inline-flex;
     align-items: center;
     gap: 0.5rem;
@@ -108,9 +109,14 @@ body.light .proyectos__description span {
     text-decoration: none;
     transition: text-decoration 2.5s ease;
 }
-.proyectos-detalle__link:hover {
+.proyectos-detalle__link:hover,
+.proyectos-detalle__link-2:hover {
     text-decoration: underline;
     transition: text-decoration 2.5s ease-out;
+}
+
+.proyectos-detalle__link-2 {
+    margin-left: 25px;
 }
 
 .proyectos-detalle__main {
@@ -189,6 +195,7 @@ body.light .proyectos-detalle__features li strong {
     width: 100%;
     margin: 10px 10px 10px 0;
     border-radius: 12px;
+    object-fit: cover;
 }
 .proyectos-detalle__gallery img:nth-child(n+2) {
     width: calc(50% - 5px);
