@@ -93,6 +93,12 @@ const About = () => {
                                     </div>
                                 </span>
                                 <span>
+                                    <div className="skills__icon postgresql">
+                                        <i className="devicon-postgresql-plain-wordmark colored"></i>
+                                        <p>PostgreSQL</p>
+                                    </div>
+                                </span>
+                                <span>
                                     <div className="skills__icon mysql">
                                         <i className="devicon-mysql-original colored"></i>
                                         <p>MySQL</p>

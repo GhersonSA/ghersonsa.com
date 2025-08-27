@@ -30,7 +30,7 @@ const ProjectDetail = () => {
     <section className="proyectos">
       <div className="proyectos__container">
         <div className="proyectos__header">
-            <img src={project.img} alt="" className="proyectos-detalle__img" />
+            <img src={project.img_detail} alt="" className="proyectos-detalle__img" />
           <div>
             <a href={project.link} target="_blank" rel="noopener noreferrer" className="proyectos-detalle__link">
               <h2 className="proyectos-detalle__title">{project.title}</h2>

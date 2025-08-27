@@ -1,5 +1,6 @@
 import CoPiloto_Login from "../assets/images/CoPiloto-Login.webp";
 import CoPiloto_Home from "../assets/images/CoPiloto-Home.webp";
+import CoPiloto_Home_3 from "../assets/images/CoPiloto-Home-3.webp";
 import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
 import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
 import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
@@ -8,22 +9,35 @@ import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
 export const projects = [
     {
         id: "proyecto-1",
-        img: CoPiloto_Login,
+        img: CoPiloto_Home_3,
+        img_detail: CoPiloto_Login,
         link: "https://copiloto-carpooling.vercel.app/",
         repo: "https://github.com/GhersonSA/CoPiloto-Carpooling-App",
-        title: "CoPiloto (Carpooling App)",
+        title: "CoPiloto Carpooling App",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
-        summary: "Carpooling App destinada a ayudar en la búsqueda de transporte compartido para ir al trabajo, conectándote desde el centro hasta polígonos industriales, llegando a los sectores más alejados de la ciudad. Permitiendo que los conductores generen ingresos extras ofreciendo asientos disponibles en sus recorridos diarios utilizando nuestra app.",
-        introduccion: "CoPiloto es una carpooling app que te permite encontrar compañeros de viaje y conductores que se dirigen a tu mismo destino, llegando hasta las zonas industriales o periféricas más alejadas. Está pensada para facilitar la movilidad de los trabajadores y compartir viajes al trabajo. CoPiloto se convierte en tu solución a tus desplazamientos diarios.",
-        description: "En CoPiloto entendemos que trasladarte al trabajo puede ser un desafío, entonces nace como una solución de movilidad inteligente pensada para facilitar los desplazamientos laborales, mientras que los conductores generan ingresos realizando los trayectos que ya hacen. Por eso, he creado una plataforma práctica y segura que conecta a personas con intereses similares para compartir viajes diarios. CoPiloto cuenta con una interfaz intuitiva que, facilita la búsqueda, reserva y gestión de viajes para adaptarse a las necesidades de cada usuario. Incluye diferentes secciones empezando por la pantalla de inicio donde presenta accesos rápidos a rutas; un Dashboard personalizado donde el usuario (Chofer) pueda visualizar sus actividades del día, su historial de pasajeros, viajes e ingresos generados. Para reforzar la confianza en mi proyecto, incorporé un sistema de reseñas y calificaciones entre conductores y pasajeros.",
+        summary: "CoPiloto es una red social (Carpooling App) que conecta a personas con destinos similares para compartir viajes al trabajo. Permitiendo que los conductores generen ingresos extras ofreciendo asientos disponibles en sus recorridos diarios utilizando nuestra app.",
+        introduccion: "CoPiloto es una aplicación web tipo carpooling que funciona como una red social de movilidad laboral. Permite que trabajadores encuentren transporte compartido hacia sus destinos y que conductores ofrezcan sus recorridos diarios, generando ingresos adicionales. Además, cuenta con un sistema de gestión de usuarios (CMS), donde se registran choferes y pasajeros con perfiles personalizados.",
+        description: "CoPiloto surge como solución a la dificultad de transporte hacia zonas de trabajo alejadas, ofreciendo una plataforma que combina carpooling y comunidad. Implementé un backend con Node.js, Express y PostgreSQL que soporta un CRUD completo con consultas y relaciones entre usuarios, choferes, pasajeros y rutas. Para la autenticación se usan JWT y cookies seguras (cookie-parser), asegurando sesiones confiables. En frontend, la experiencia es intuitiva y responsive gracias a React y TailwindCSS. La aplicación también funciona como un CMS donde el administrador puede registrar y gestionar usuarios, choferes y pasajeros. Incluye un dashboard para choferes con historial de viajes, pasajeros e ingresos, además de un sistema de reseñas que fomenta la confianza entre la comunidad.",
+        highlights: [
+            { description: "Red social (Carpooling App)," },
+            { description: "Autenticación con JWT y cookies seguras." },
+            { description: "CMS para gestionar choferes y pasajeros," },
+            { description: "Dashboard con historial de viajes e ingresos," },
+            { description: "Backend completo (CRUD, relaciones en BD)," },
+            { description: "Responsive y Mobile First," }
+        ],
         features: [
             {
                 description: "Entre las características principales destacan las siguientes:"
             },
             {
-                title: "Autenticación segura",
-                text: "Posibilidad de iniciar sesión o probar la aplicación con el modo invitado (Demo)."
+                title: "Autenticación segura con JWT",
+                text: "Inicio de sesión con cookies HttpOnly y soporte para modo invitado (Demo)."
+            },
+            {
+                title: "Gestión de usuarios (CMS)",
+                text: "Administración de choferes y pasajeros con perfiles personalizados y control de accesos."
             },
             {
                 title: "Búsqueda de transporte eficiente",
@@ -42,6 +56,10 @@ export const projects = [
                 text: "Después de cada trayecto, usuarios pueden calificar y dejar comentarios, fomentando la seguridad y el buen comportamiento."
             },
             {
+                title: "Optimización de rendimiento",
+                text: "Backend con consultas eficientes en PostgreSQL y relaciones entre usuarios, choferes, pasajeros y viajes."
+            },
+            {
                 title: "Responsive Design & Mobile First",
                 text: "Diseño adaptado a múltiples dispositivos. Interfaces limpias, jerarquía visual clara y navegación optimizada para pantallas pequeñas."
             }
@@ -56,11 +74,12 @@ export const projects = [
         techDetails: [
             { tech: "React", use: "Diseño de componentes para el frontend" },
             { tech: "TailwindCSS", use: "Facilidad de estilos para los componentes" },
-            { tech: "Node.js", use: "Próximamente..." },
-            { tech: "Express.js", use: "Próximamente..." },
-            { tech: "MongoDB", use: "Próximamente..." }
+            { tech: "Node.js", use: "Entorno de ejecución para JavaScript del lado del servidor" },
+            { tech: "Express.js", use: "Framework para el desarrollo ágil de API con NodeJS" },
+            { tech: "PostgreSQL", use: "Consultas, relaciones y almacenamiento de datos" },
+            { tech: "JWT + Cookie parser", use: "Autenticación y manejo seguro de sesiones" }
         ],
-        tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"]
+        tools: ["React", "TailwindCSS", "Node.js", "Express.js", "PostgreSQL", "JWT", "Cookies"]
     },
     {
         id: "proyecto-2",
@@ -73,6 +92,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -109,6 +129,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -145,6 +166,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -181,6 +203,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -217,6 +240,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -253,6 +277,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -289,6 +314,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
@@ -325,6 +351,7 @@ export const projects = [
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
         description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
+        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
         features: [
             { description: "Entre las características principales destaca..."},
             {
