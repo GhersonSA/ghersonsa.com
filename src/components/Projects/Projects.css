@@ -60,6 +60,9 @@
     }
 }
 
+.proyectos__img {
+    position: relative;
+}
 .card__img {
     width: 100%;
     height: 180px;
@@ -71,6 +74,38 @@
 }
 .card__img:hover {
     transform: scale(1.05);
+}
+
+.card__stack {
+    display: inline-block;
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    backdrop-filter: blur(12px);
+    background-color: rgba(17, 24, 39, 0.5);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.75rem;
+    z-index: 2;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--neutral-light);
+    animation: stack__animation 2s infinite; 
+}
+
+@keyframes stack__animation {
+    0% {
+        color: var(--neutral-light);
+    }
+    50% {
+        color: var(--neutral-light);
+        text-shadow: 
+            0 0 1px var(--primary-color-light),
+            0 0 1px var(--primary-color-light),
+            0 0 1px var(--primary-color-light);
+    }
+    100% {
+        color: var(--neutral-light);
+    }
 }
 
 .card__content {

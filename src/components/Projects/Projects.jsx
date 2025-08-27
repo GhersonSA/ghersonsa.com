@@ -14,6 +14,7 @@ const Projects = () => {
                         key={project.id}
                         id={project.id}
                         img={project.img}
+                        stack={project.stack}
                         title={project.title}
                         highlights={project.highlights}
                         link={project.link}
