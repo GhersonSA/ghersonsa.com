@@ -21,12 +21,12 @@ export const projects = [
         introduccion: "CoPiloto es una aplicación web tipo carpooling que funciona como una red social de movilidad laboral. Permite que trabajadores encuentren transporte compartido hacia sus destinos y que conductores ofrezcan sus recorridos diarios, generando ingresos adicionales. Además, cuenta con un sistema de gestión de usuarios (CMS), donde se registran choferes y pasajeros con perfiles personalizados.",
         description: "CoPiloto surge como solución a la dificultad de transporte hacia zonas de trabajo alejadas, ofreciendo una plataforma que combina carpooling y comunidad. Implementé un backend con Node.js, Express y PostgreSQL que soporta un CRUD completo con consultas y relaciones entre usuarios, choferes, pasajeros y rutas. Para la autenticación se usan JWT y cookies seguras (cookie-parser), asegurando sesiones confiables. En frontend, la experiencia es intuitiva y responsive gracias a React y TailwindCSS. La aplicación también funciona como un CMS donde el administrador puede registrar y gestionar usuarios, choferes y pasajeros. Incluye un dashboard para choferes con historial de viajes, pasajeros e ingresos, además de un sistema de reseñas que fomenta la confianza entre la comunidad.",
         highlights: [
-            { description: "Red social (Carpooling App)," },
+            { description: "Red social (Carpooling App)." },
             { description: "Autenticación con JWT y cookies seguras." },
-            { description: "CMS para gestionar choferes y pasajeros," },
-            { description: "Dashboard con historial de viajes e ingresos," },
-            { description: "Backend completo (CRUD, relaciones en BD)," },
-            { description: "Responsive y Mobile First," }
+            { description: "CMS para gestionar choferes y pasajeros." },
+            { description: "Dashboard con historial de viajes e ingresos." },
+            { description: "Backend completo (CRUD, relaciones en BD)." },
+            { description: "Responsive y Mobile First." }
         ],
         features: [
             {
