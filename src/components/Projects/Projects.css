@@ -109,12 +109,12 @@
 }
 
 .card__content {
-    padding: 1.5rem;
+    padding: 1rem;
     z-index: 1;
 }
 
 .card__title {
-    margin: 10px 0;
+    margin: 5px 0 10px 0;
     font-size: 1.8rem;
     font-family: var(--font-primary);
     text-shadow: 
