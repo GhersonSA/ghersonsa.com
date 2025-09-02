@@ -70,7 +70,7 @@ const Contact = () => {
                             <span className="form__miniphoto"></span>
                         </div>
                         <div className="form__button">
-                            <a href="../../../public/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" className="submit__button">Curriculum <i className="fa-solid fa-file-pdf"></i></a>
+                            <a href="/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" className="submit__button">Curriculum <i className="fa-solid fa-file-pdf"></i></a>
                         </div>  
                     </div>
                 </div>
