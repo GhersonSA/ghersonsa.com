@@ -87,22 +87,46 @@ export const projects = [
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         repo: "",
         link: "url del proyecto 2",
-        title: "Próximamente...",
+        title: "Spotify Full Clone (En progreso...)",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
-        summary: "App destinada a...",
-        introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
+        stack: "Frontend",
+        summary: "Clon que replica la experiencia completa de Spotify en versión web, ofreciendo diseño fiel al original, reproducción de música, sincronización de letras y gestión de colecciones locales, todo en una interfaz moderna y responsiva.",
+        introduccion: "Spotify Full Clone es un proyecto personal desarrollado con HTML, JavaScript, React y TailwindCSS, cuyo objetivo es recrear la plataforma de música más popular del mundo. Este proyecto busca no solo imitar su estética, sino también ofrecer funcionalidades que brinden una experiencia inmersiva al usuario.",
+        description: "La aplicación combina diseño responsivo, control dinámico de reproducción y sincronización de letras en tiempo real, logrando un entorno muy cercano al original. Además, permite la gestión local de colecciones musicales, garantizando una experiencia completa tanto en escritorio como en dispositivos móviles. Este clon es una demostración práctica de cómo integrar tecnologías modernas en un proyecto ambicioso y escalable.",
+        highlights: [
+            { description: "Experiencia de Usuario Completa." },
+            { description: "Sincronización de Letras en Tiempo Real." },
+            { description: "Réplica exacta del Diseño Original." },
+            { description: "Control de Reproducción Dinámico." },
+            { description: "Gestión de Colecciones de Musica Local." },
+            { description: "Responsive y Mobile First." }
+        ],
         features: [
             { description: "Entre las características principales destaca..."},
             {
-                title: "Funcionalidad 1",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Réplica exacta del Diseño Original",
+                text: "Se ha cuidado cada detalle de su diseño manteniendo su armonía original."
             },
             {
-                title: "Funcionalidad 2",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Sincronización de Letras en Tiempo Real",
+                text: "Esta es la funcionalidad estrella. Destaca la precisión con la que las letras se sincronizan al ritmo de la música, ofreciendo una experiencia inmersiva y atractiva para los usuarios."
+            },
+            {
+                title: "Experiencia de Usuario Completa",
+                text: "La aplicación ofrece una experiencia de usuario fluida e intuitiva, similar a la plataforma original de Spotify."
+            },
+            {
+                title: "Control de Reproducción Dinámico",
+                text: "Controla el avance de la canción, el volumen, el orden de la cola y la reproducción aleatoria."
+            },
+            {
+                title: "Gestión de Colecciones de Musica Local",
+                text: "La biblioteca de canciones se gestionan de manera local."
+            },
+            {
+                title: "Responsive Design & Mobile First",
+                text: "Diseño adaptado a múltiples dispositivos. Interfaces limpias, jerarquía visual clara y navegación optimizada para pantallas pequeñas."
             }
         ],
         screenshots: [
@@ -112,12 +136,9 @@ export const projects = [
         ],
         techDetails: [
             { tech: "React", use: "Diseño de componentes para el Frontend" },
-            { tech: "TailwindCSS", use: "Facilidad de estilos para el Frontend" },
-            { tech: "Node.js", use: "Backend" },
-            { tech: "Express.js", use: "Backend" },
-            { tech: "MongoDB", use: "Base de datos" }
+            { tech: "TailwindCSS", use: "Facilidad de estilos para el Frontend" }
         ],
-        tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js"]
+        tools: ["HTML", "JavaScript", "React", "TailwindCSS"]
     },
     {
         id: "proyecto-3",

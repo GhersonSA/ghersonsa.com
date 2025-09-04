@@ -210,7 +210,6 @@ body.light .form__name h4 {
 }
 .form__group {
     display: flex;
-    flex-direction: column;
     align-items: end;
     margin-top: 20px;
     color: var(--neutral-light);
@@ -218,14 +217,18 @@ body.light .form__name h4 {
 
 .form__group div {
     width: 100%;
-    min-width: 240px;
-    max-width: 500px;
+    /* min-width: 240px;
+    max-width: 500px; */
     display: flex;
     align-items: center;
     padding: 0 10px;
     background-color: var(--form-message);
     border-radius: 10px;
     font-size: clamp(1.2rem, 4vw, 1.6rem);
+}
+
+.form__group div:first-child {
+    margin-right: 10px;
 }
 
 .form__group div input {
@@ -238,6 +241,30 @@ body.light .form__name h4 {
 
 .form__group div i {
     color: var(--form-text);
+}
+
+.form__group div textarea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    padding-top: 15px;
+    margin-left: 10px;
+    color: var(--form-text);
+    resize: none;
+    border: none;
+    outline: none;
+    font-size: clamp(1.2rem, 4vw, 1.6rem);
+    font-family: var(--font-primary);
+}
+
+.form__status {
+    position: absolute;
+    top: 53.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .form__message-2 {
@@ -281,12 +308,15 @@ body.light .form__name h4 {
     border-top: 1px solid var(--form-border);
     border-radius: 0px 0px 20px 20px;
 }
+.form__button button {
+    margin-right: 10px;
+}
 .submit__button {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 200px;
+    width: 140px;
     height: 30px;
     background-color: var(--form-message);
     color: var(--neutral-light);
@@ -349,10 +379,16 @@ body.light .form__name h4 {
     .form__group div {
         margin: 0 10px;
     }
+    .form__group div:first-child {
+        margin-right: 0px;
+    }
     .form__button {
         height: 60px;
         margin-top: 40px;
         align-items: center;
+    }
+    .submit__button {
+        width: 200px;
     }
 }
 

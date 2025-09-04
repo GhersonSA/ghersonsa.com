@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import './Contact.css';
 import form__photo from '../../assets/images/img-casual.jpg';
@@ -5,6 +6,25 @@ import form__photo from '../../assets/images/img-casual.jpg';
 const Contact = () => {
 
     const [sectionRef, isVisible] = useIntersectionObserver();
+    const [status, setStatus] = useState("");
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        const data = new FormData(e.target);
+
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            body: data,
+        });
+
+        const result = await response.json();
+        if (result.success) {
+            setStatus("Mensaje enviado con éxito");
+            e.target.reset();
+        } else {
+            setStatus("Error al enviar el mensaje");
+        }
+    }
 
     return (
         <section ref={sectionRef} className={`formulario ${isVisible ? "visible" : ""}`} id="formulario">
@@ -50,28 +70,44 @@ const Contact = () => {
                             <p className={`message__animation ${isVisible ? "visible" : ""}`}>Envíame un mensaje y te responderé lo más rápido posible!</p>
 
                         </div>
-                        {/* */}
-                        <div className="form__group">
-                            <div>
-                                <i className="fa-brands fa-whatsapp"></i>
-                                <input type="text" value="+34 624313994" readOnly />
+                        <form onSubmit={handleSubmit}>
+                            <input type="hidden" name="access_key" value="4f23cf61-bddf-45bc-8f48-ee328ce70c0f" />
+
+                            <div className="form__group">
+                                <div>
+                                    <i className="fa-solid fa-user-tie"></i>
+                                    <input type="text" name="name" placeholder="Nombre" required />
+                                </div>
+                                <div>
+                                    <i className="fa-solid fa-square-envelope"></i>
+                                    <input type="email" name="email" placeholder="Email" required />
+                                </div>
                             </div>
-                        </div>
-                        <div className="form__group">
-                            <div>
-                                <i className="fa-solid fa-square-envelope"></i>
-                                <input type="text" value="Gherson2002@outlook.com" readOnly />
+                            <div className="form__group">
+                                <div>
+                                    <i className="fa-solid fa-message"></i>
+                                    <textarea name="message" placeholder="Mensaje" required></textarea>
+                                </div>
                             </div>
-                        </div>
-                        <div className="form__message-2">
-                            <img width="35" height="35" src={form__photo} alt="foto" className="form__photo"/>
-                            <span className="green__point-3"></span> 
-                            <p className={`message-2__animation ${isVisible ? "visible" : ""}`}>¡Gracias por visitar mi portafolio!<br />Estoy constantemente aprendiendo y mejorando mis habilidades. Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo a través de WhatsApp, correo electrónico o por mis redes sociales. ¡Me encantaría saber tu opinión!</p>
-                            <span className="form__miniphoto"></span>
-                        </div>
-                        <div className="form__button">
-                            <a href="/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" className="submit__button">Curriculum <i className="fa-solid fa-file-pdf"></i></a>
-                        </div>  
+                            <div className="form__status">
+                                {status && <p className="form__chat-disponibilidad">{status}</p>}
+                            </div>
+
+                            <div className="form__message-2">
+                                <img width="35" height="35" src={form__photo} alt="foto" className="form__photo"/>
+                                <span className="green__point-3"></span> 
+                                <p className={`message-2__animation ${isVisible ? "visible" : ""}`}>¡Gracias por visitar mi portafolio!<br />Estoy constantemente aprendiendo y mejorando mis habilidades. Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto conmigo a través de WhatsApp, correo electrónico o por mis redes sociales. ¡Me encantaría saber tu opinión!</p>
+                                <span className="form__miniphoto"></span>
+                            </div>
+                            <div className="form__button">
+                                <button type="submit" className="submit__button">
+                                    Enviar <i className="fa-solid fa-paper-plane"></i>
+                                </button>
+                                <a href="/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" className="submit__button">
+                                    Curriculum <i className="fa-solid fa-file-pdf"></i>
+                                </a>
+                            </div>  
+                        </form> 
                     </div>
                 </div>
             </div>
