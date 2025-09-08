@@ -4,6 +4,7 @@ import CoPiloto_Home_3 from "../assets/images/CoPiloto-Home-3.webp";
 import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
 import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
 import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
+import Spotify_Full_Clone from "../assets/images/Spotify-Full-Clone.webp"
 
 
 export const projects = [
@@ -84,9 +85,10 @@ export const projects = [
     },
     {
         id: "proyecto-2",
-        img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-        repo: "",
-        link: "url del proyecto 2",
+        img: Spotify_Full_Clone,
+        img_detail: Spotify_Full_Clone,
+        repo: "https://github.com/GhersonSA/Spotify-Full-Clone",
+        link: "https://spotify-full-clone-react.vercel.app/",
         title: "Spotify Full Clone (En progreso...)",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
@@ -130,7 +132,7 @@ export const projects = [
             }
         ],
         screenshots: [
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+            Spotify_Full_Clone,
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
         ],
