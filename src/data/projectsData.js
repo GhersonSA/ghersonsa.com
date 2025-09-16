@@ -5,6 +5,9 @@ import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
 import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
 import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
 import Spotify_Full_Clone from "../assets/images/Spotify-Full-Clone.webp"
+import Spotify_Full_Clone_Mobile from "../assets/images/Spotify-Full-Clone-Mobile.webp"
+import Spotify_Full_Clone_Desktop from "../assets/images/Spotify-Full-Clone-Desktop.webp"
+import Proximamente from "../assets/images/proximamente.webp"
 
 
 export const projects = [
@@ -85,7 +88,7 @@ export const projects = [
     },
     {
         id: "proyecto-2",
-        img: Spotify_Full_Clone,
+        img: Spotify_Full_Clone_Desktop,
         img_detail: Spotify_Full_Clone,
         repo: "https://github.com/GhersonSA/Spotify-Full-Clone",
         link: "https://spotify-full-clone-react.vercel.app/",
@@ -133,8 +136,8 @@ export const projects = [
         ],
         screenshots: [
             Spotify_Full_Clone,
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
+            Spotify_Full_Clone_Mobile,
+            Proximamente
         ],
         techDetails: [
             { tech: "React", use: "Diseño de componentes para el Frontend" },
