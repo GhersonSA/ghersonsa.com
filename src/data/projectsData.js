@@ -5,6 +5,8 @@ import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
 import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
 import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
 import Spotify_Full_Clone from "../assets/images/Spotify-Full-Clone.webp"
+import Spotify_Full_Clone_2 from "../assets/images/Spotify-Full-Clone-2.webp"
+import Spotify_Full_Clone_3 from "../assets/images/Spotify-Full-Clone-3.webp"
 import Spotify_Full_Clone_Mobile from "../assets/images/Spotify-Full-Clone-Mobile.webp"
 import Spotify_Full_Clone_Desktop from "../assets/images/Spotify-Full-Clone-Desktop.webp"
 import Proximamente from "../assets/images/proximamente.webp"
@@ -136,8 +138,9 @@ export const projects = [
         ],
         screenshots: [
             Spotify_Full_Clone,
-            Spotify_Full_Clone_Mobile,
-            Proximamente
+            Spotify_Full_Clone_2,
+            Spotify_Full_Clone_3,
+            Spotify_Full_Clone_Mobile
         ],
         techDetails: [
             { tech: "React", use: "Diseño de componentes para el Frontend" },
@@ -150,8 +153,8 @@ export const projects = [
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
         link: "url del proyecto 3",
         repo: "",
-        title: "Próximamente...",
-        cliente: "Proyecto personal", 
+        title: "Cliente Real (Próximamente...)",
+        cliente: "Negocio local", 
         type: "Aplicación web",
         summary: "App destinada a...",
         introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
@@ -180,7 +183,7 @@ export const projects = [
             { tech: "Express.js", use: "Backend" },
             { tech: "MongoDB", use: "Base de datos" }
         ],
-        tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js"]
+        tools: ["Next.js", "TypeScript", "TailwindCSS"]
     },
     {
         id: "proyecto-4",

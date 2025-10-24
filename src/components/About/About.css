@@ -59,7 +59,7 @@
     height: 250px;
     border: 5px solid var(--text-color);
     border-radius: 50%;
-    background: url('../../assets/images/perfil-light.png') no-repeat center center/cover;
+    background: url('../../assets/images/perfil-light.webp') no-repeat center center/cover;
     background-color: var(--about-photo-bg);
     box-shadow: 
         0 0 5px var(--primary-color-light),
@@ -68,10 +68,10 @@
     object-fit: cover;
 }
 .g-photo__mobile.dark {
-    background-image: url('../../assets/images/perfil-light.png');
+    background-image: url('../../assets/images/perfil-light.webp');
 }
 .g-photo__mobile.light {
-    background-image: url('../../assets/images/perfil-dark.png');
+    background-image: url('../../assets/images/perfil-dark.webp');
 }
 
 body.light .g-photo__mobile {
@@ -223,6 +223,15 @@ body.light .sobre-mi__p span {
 .react {
     background-color: #88dded38;
 }
+.nextjs {
+    background-color: #00000038;
+}
+.angular {
+    background-color: #dd003838;
+}
+.typescript {
+    background-color: #3178c638;
+}
 .tailwind {
     background-color: #00315938;
 }
@@ -235,6 +244,9 @@ body.light .sobre-mi__p span {
 .express {
     background-color: #6cc24a38;
 }
+.symfony {
+    background-color: #00000038;
+}
 .postgresql {
     background-color: #33679138;
 }
@@ -244,11 +256,17 @@ body.light .sobre-mi__p span {
 .mongodb {
     background-color: #3fa03738;
 }
+.docker {
+    background-color: #2496ed38;
+}
 .git {
     background-color: #f1502f38;
 }
 .github {
     background-color: #33333338;
+}
+.gitlab {
+    background-color: #fc6d2638;
 }
 
 @media (min-width: 670px) {

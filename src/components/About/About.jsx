@@ -1,8 +1,8 @@
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import { useTheme } from '../../context/ThemeContext';
 import './About.css';
-import g__photo from '../../assets/images/img-light.png';
-import g__photo2 from '../../assets/images/img-dark.png';
+import g__photo from '../../assets/images/img-light.webp';
+import g__photo2 from '../../assets/images/img-dark.webp';
 
 const About = () => {
 
@@ -25,7 +25,7 @@ const About = () => {
                             <h3 className={`sobre-mi__profesion down__animation ${isVisible ? "visible" : ""}`}>{'"Desarrollador Web"'}</h3>
                             <h4 className={`sobre-mi__disponibilidad down__animation ${isVisible ? "visible" : ""}`}><span>•</span> Disponible para trabajar</h4>
 
-                            <p className={`sobre-mi__p right__animation ${isVisible ? "visible" : ""}`}>La programación me atrapó por la posibilidad infinita de crear. <span>Hoy, desarrollo aplicaciones web con JavaScript, React y las últimas tecnologías, manteniéndome siempre actualizado y en busca de nuevos desafíos.</span></p>
+                            <p className={`sobre-mi__p right__animation ${isVisible ? "visible" : ""}`}>La programación me atrapó por la posibilidad infinita de crear. <span>Hoy, desarrollo aplicaciones web modernas con TypeScript, React, Next.js, Node.js y las últimas tecnologías, manteniéndome siempre actualizado y en busca de nuevos desafíos.</span></p>
 
                             <p className={`sobre-mi__p left__animation ${isVisible ? "visible" : ""}`}>He tenido la oportunidad de hacer de mi hobby una profesión y, <span>mis proyectos personales están enfocados a brindar soluciones a problemas de la vida cotidiana.</span></p>
 
@@ -69,6 +69,24 @@ const About = () => {
                                     </div>
                                 </span>
                                 <span>
+                                    <div className="skills__icon nextjs">
+                                        <i className="devicon-nextjs-plain"></i>
+                                        <p>Next.js</p>
+                                    </div>
+                                </span>
+                                <span>
+                                    <div className="skills__icon angular">
+                                        <i className="devicon-angularjs-plain colored"></i>
+                                        <p>Angular</p>
+                                    </div>
+                                </span>
+                                <span>
+                                    <div className="skills__icon typescript">
+                                        <i className="devicon-typescript-plain colored"></i>
+                                        <p>TypeScript</p>
+                                    </div>
+                                </span>
+                                <span>
                                     <div className="skills__icon tailwind">
                                         <i className="devicon-tailwindcss-original colored"></i>
                                         <p>TailwindCSS</p>
@@ -93,6 +111,12 @@ const About = () => {
                                     </div>
                                 </span>
                                 <span>
+                                    <div className="skills__icon symfony">
+                                        <i className="devicon-symfony-original"></i>
+                                        <p>Symfony</p>
+                                    </div>
+                                </span>
+                                <span>
                                     <div className="skills__icon postgresql">
                                         <i className="devicon-postgresql-plain colored"></i>
                                         <p>PostgreSQL</p>
@@ -111,6 +135,12 @@ const About = () => {
                                     </div>
                                 </span>
                                 <span>
+                                    <div className="skills__icon docker">
+                                        <i className="devicon-docker-plain colored"></i>
+                                        <p>Docker</p>
+                                    </div>
+                                </span>
+                                <span>
                                     <div className="skills__icon git">
                                         <i className="devicon-git-plain colored"></i>
                                         <p>Git</p>
@@ -120,6 +150,12 @@ const About = () => {
                                     <div className="skills__icon github">
                                         <i className="devicon-github-plain"></i>
                                         <p>GitHub</p>
+                                    </div>
+                                </span>
+                                <span>
+                                    <div className="skills__icon gitlab">
+                                        <i className="devicon-gitlab-plain colored"></i>
+                                        <p>GitLab</p>
                                     </div>
                                 </span>
                             </div>

@@ -1,7 +1,7 @@
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import { useTheme } from '../../context/ThemeContext';
-import img__light from '../../assets/images/perfil-light.png';
-import img__dark from '../../assets/images/perfil-dark.png';
+import img__light from '../../assets/images/perfil-light.webp';
+import img__dark from '../../assets/images/perfil-dark.webp';
 import './Hero.css';
 
 const Hero = () => {

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import './Contact.css';
-import form__photo from '../../assets/images/img-casual.jpg';
+import form__photo from '../../assets/images/img-casual.webp';
 
 const Contact = () => {
 
@@ -103,7 +103,7 @@ const Contact = () => {
                                 <button type="submit" className="submit__button">
                                     Enviar <i className="fa-solid fa-paper-plane"></i>
                                 </button>
-                                <a href="/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" className="submit__button">
+                                <a href="/assets/pdf/CV_Gherson_Sanchez_Aguirre_DesarrolladorFullStack.pdf" download="CV_SANCHEZ GHERSON FullStack.pdf" className="submit__button">
                                     Curriculum <i className="fa-solid fa-file-pdf"></i>
                                 </a>
                             </div>  

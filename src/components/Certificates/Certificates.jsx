@@ -1,11 +1,11 @@
 import './Certificates.css';
 import Card from './Card';
-import Certificate__1 from '../../assets/images/dip-react-tailwindcss.jpg'
-import Certificate__2 from '../../assets/images/dip-fullstack-javascript.jpg'
-import Certificate__3 from '../../assets/images/dip-git-github.jpg'
-import Certificate__4 from '../../assets/images/dip-responsive-design.jpg'
-import Certificate__5 from '../../assets/images/dip-ecmascript-6.jpg'
-import Certificate__6 from '../../assets/images/dip-en-infinitive.jpg'
+import Certificate__1 from '../../assets/images/dip-react-tailwindcss.webp'
+import Certificate__2 from '../../assets/images/dip-fullstack-javascript.webp'
+import Certificate__3 from '../../assets/images/dip-git-github.webp'
+import Certificate__4 from '../../assets/images/dip-responsive-design.webp'
+import Certificate__5 from '../../assets/images/dip-ecmascript-6.webp'
+import Certificate__6 from '../../assets/images/dip-en-infinitive.webp'
 
 const certificates = [
     { img: Certificate__1 },

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 import useNavigateAndScroll from '../../hooks/useNavigateAndScroll';
 import g_light from '../../assets/images/G-light.png';
 import g_dark from '../../assets/images/G-black.png';
-import img__light from '../../assets/images/perfil-light.png';
-import img__dark from '../../assets/images/perfil-dark.png';
+import img__light from '../../assets/images/perfil-light.webp';
+import img__dark from '../../assets/images/perfil-dark.webp';
 import ThemeToggle from '../ThemeToggle/ThemeToggle';
 import { useTheme } from '../../context/ThemeContext';
 import './Header.css';
@@ -67,7 +67,7 @@ const Header = () => {
                     </a>
                 </li>
                 <h2 className="header__mobile-h2">- Currículum -</h2>
-                <li><a className="header__cv" href="/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf" onClick={toggleMenu}>CV <i className="fa-regular fa-file"></i></a></li>
+                <li><a className="header__cv" href="/assets/pdf/CV_Gherson_Sanchez_Aguirre_DesarrolladorFullStack.pdf" download="CV_SANCHEZ GHERSON FullStack.pdf" onClick={toggleMenu}>CV <i className="fa-regular fa-file"></i></a></li>
                 <h2 className="header__mobile-h2">- Tema -</h2>
                 <li><ThemeToggle /></li>
                 </ul>
@@ -78,7 +78,7 @@ const Header = () => {
                     <li><Link to="/projects" onClick={() => window.scrollTo(0, 0)} className="header__a">Proyectos</Link></li>
                     <li><button onClick={() => navigateAndScroll('about')} className="header__a">Sobre mí</button></li>
                     <li><button onClick={() => navigateAndScroll('formulario')} className="header__a">Contacto</button></li>
-                    <li><a className="header__cv" href="/assets/pdf/CV_SANCHEZ GHERSON.pdf" download="CV_SANCHEZ GHERSON.pdf">CV <i className="fa-solid fa-file-invoice"></i></a></li>
+                    <li><a className="header__cv" href="/assets/pdf/CV_Gherson_Sanchez_Aguirre_DesarrolladorFullStack.pdf" download="CV_SANCHEZ GHERSON FullStack.pdf">CV <i className="fa-solid fa-file-invoice"></i></a></li>
                 </ul>
 
 

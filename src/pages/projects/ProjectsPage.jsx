@@ -2,8 +2,8 @@ import { Link } from 'react-router-dom';
 import { useTheme } from '../../context/ThemeContext';
 import Card from '../../components/Projects/Card';
 import { projects } from '../../data/projectsData';
-import projectHero__dark from '../../assets/images/proyectosHero-dark.jpg';
-import projectHero__light from '../../assets/images/proyectosHero-light.jpg';
+import projectHero__dark from '../../assets/images/proyectosHero-dark.webp';
+import projectHero__light from '../../assets/images/proyectosHero-light.webp';
 import '../../components/Projects/Projects.css';
 import './ProjectsPage.css';
 

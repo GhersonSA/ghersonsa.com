@@ -94,7 +94,20 @@ body.light .exp__time {
     margin-top: 8px;
     font-size: 1.6rem;
 }
-
+.exp__p strong {
+    color: var(--neutral-light);
+    text-shadow: 
+        0 0 2px var(--primary-color-light),
+        0 0 2px var(--primary-color-light),
+        0 0 2px var(--primary-color-light);
+}
+body.light .exp__p strong {
+    color: var(--neutral-dark);
+    text-shadow: 
+        0 0 5px var(--secondary-color),
+        0 0 5px var(--secondary-color),
+        0 0 5px var(--secondary-color);
+}
 
 @media (min-width: 670px) {
     .experiencia-laboral__container .h2-title {

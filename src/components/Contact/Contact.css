@@ -225,6 +225,7 @@ body.light .form__name h4 {
     background-color: var(--form-message);
     border-radius: 10px;
     font-size: clamp(1.2rem, 4vw, 1.6rem);
+    transition: all 0.2s ease-in;
 }
 
 .form__group div:first-child {
@@ -240,7 +241,7 @@ body.light .form__name h4 {
 }
 
 .form__group div i {
-    color: var(--form-text);
+    color: var(--neutral-light);
 }
 
 .form__group div textarea {
@@ -258,6 +259,18 @@ body.light .form__name h4 {
     outline: none;
     font-size: clamp(1.2rem, 4vw, 1.6rem);
     font-family: var(--font-primary);
+}
+
+.form__group div input::placeholder,
+.form__group div i::placeholder,
+.form__group div textarea::placeholder {
+    color: var(--form-text);
+}
+
+.form__group div:hover {
+    background-color: var(--hover-form-message);
+    transform: scale(0.98);
+    cursor: pointer;
 }
 
 .form__status {
