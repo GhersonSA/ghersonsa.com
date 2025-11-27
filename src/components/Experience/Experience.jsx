@@ -17,11 +17,13 @@ const Experience = () => {
                                 <span className="exp__span-2">Zaragoza</span>
                             </h3>
                             <time className="exp__time">Septiembre 2025 - Actualidad</time>
-                            <p className="exp__p">· <strong>Lideré el desarrollo completo de un entorno colaborativo</strong> (equipo de 6 desarrolladores) para una plataforma de eventos, integrando módulos dinámicos permitiendo a administradores editar eventos destacados y redes sociales desde el panel de control.</p>
-                            <p className="exp__p">· <strong>Desarrollé e implementé APIs RESTful, un sistema de reservas y gestión de entidades</strong> para un estudio musical.</p>
-                            <p className="exp__p">· <strong>Integré funcionalidades como autenticación JWT,</strong> verificación de correo y gestión de roles en un entorno Docker</p>
-                            <p className="exp__p">· <strong>Apliqué metodologías ágiles (KANBAN y Git Flow),</strong> con seguimiento diario en Slack y despliegue continuo en Docker.</p>
-                            <p className="exp__p"><strong>Stack:</strong> Angular, Symfony, PostgreSQL, TypeScript, Node.js, Postman, Docker, GitLab</p>
+                            <p className="exp__p">· <strong>Lideré el desarrollo completo de un entorno colaborativo</strong> (equipo de 6 desarrolladores) para una plataforma de eventos, integrando módulos dinámicos permitiendo a administradores editar eventos destacados y redes sociales desde el panel de control con Angular, Tailwind CSS y TypeScript.</p>
+                            <p className="exp__p">· <strong>Desarrollé e implementé arquitectura de APIs RESTful robustas </strong>para un sistema de reservas y gestión de entidades para un estudio musical.</p>
+                            <p className="exp__p">· <strong>Contenerización de aplicaciones </strong>y gestión de entornos de despliegue continuo con Docker.</p>
+                            <p className="exp__p">· <strong>Gestión de bases de datos relacionales, incluyendo migraciones complejas </strong> y modelado de entidades con PostgreSQL.</p>
+                            <p className="exp__p">· <strong>Integré funcionalidades como autenticación social con Google API y seguridad mediante JWT,</strong> verificaciones de correo y gestión de roles y pasarelas de pagos seguras con Stripe.</p>
+                            <p className="exp__p">· <strong>Apliqué metodologías ágiles (KANBAN y Git Flow),</strong> con seguimiento diario en Slack.</p>
+                            <p className="exp__p"><strong>Stack:</strong> Angular, Symfony, PostgreSQL, TypeScript, Node.js, Postman, Docker, GitLab.</p>
                         </li>
                         {/*}
                         <li className="exp__card">
