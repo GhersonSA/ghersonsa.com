@@ -1,5 +1,6 @@
 import useIntersectionObserver from '../../hooks/useIntersectionObserver';
 import { useTheme } from '../../context/ThemeContext';
+import { techIcons } from '../../data/techIcons';
 import './About.css';
 import g__photo from '../../assets/images/img-light.webp';
 import g__photo2 from '../../assets/images/img-dark.webp';
@@ -44,120 +45,14 @@ const About = () => {
                         <div className="sobre-mi__skills">
                             <h2 className={`h2-title top__animation ${isVisible ? "visible" : ""}`}>Habilidades</h2>
                             <div className={`skills__container top__animation ${isVisible ? "visible" : ""}`}>
-                                <span>
-                                    <div className="skills__icon html">
-                                        <i className="devicon-html5-plain colored"></i>
-                                        <p>HTML</p>
+                                {Object.entries(techIcons).map(([name, tech]) => (
+                                    <span key={name}>
+                                    <div className={`skills__icon ${name.toLowerCase()}`}>
+                                        <i className={tech.class}></i>
+                                        <p>{name}</p>
                                     </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon css">
-                                        <i className="devicon-css3-plain colored"></i>
-                                        <p>CSS</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon javascript">
-                                        <i className="devicon-javascript-plain colored"></i>
-                                        <p>JavaScript</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon react">
-                                        <i className="devicon-react-original colored"></i>
-                                        <p>React</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon nextjs">
-                                        <i className="devicon-nextjs-plain"></i>
-                                        <p>Next.js</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon angular">
-                                        <i className="devicon-angularjs-plain colored"></i>
-                                        <p>Angular</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon typescript">
-                                        <i className="devicon-typescript-plain colored"></i>
-                                        <p>TypeScript</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon tailwind">
-                                        <i className="devicon-tailwindcss-original colored"></i>
-                                        <p>TailwindCSS</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon sass">
-                                        <i className="devicon-sass-original colored"></i>
-                                        <p>Sass</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon node">
-                                        <i className="devicon-nodejs-plain colored"></i>
-                                        <p>Node</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon express">
-                                        <i className="devicon-express-original"></i>
-                                        <p>Express</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon symfony">
-                                        <i className="devicon-symfony-original"></i>
-                                        <p>Symfony</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon postgresql">
-                                        <i className="devicon-postgresql-plain colored"></i>
-                                        <p>PostgreSQL</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon mysql">
-                                        <i className="devicon-mysql-original colored"></i>
-                                        <p>MySQL</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon mongodb">
-                                        <i className="devicon-mongodb-plain colored"></i>
-                                        <p>MongoDB</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon docker">
-                                        <i className="devicon-docker-plain colored"></i>
-                                        <p>Docker</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon git">
-                                        <i className="devicon-git-plain colored"></i>
-                                        <p>Git</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon github">
-                                        <i className="devicon-github-plain"></i>
-                                        <p>GitHub</p>
-                                    </div>
-                                </span>
-                                <span>
-                                    <div className="skills__icon gitlab">
-                                        <i className="devicon-gitlab-plain colored"></i>
-                                        <p>GitLab</p>
-                                    </div>
-                                </span>
+                                    </span>
+                                ))}
                             </div>
                         </div>
                     </div>

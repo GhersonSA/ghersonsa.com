@@ -241,6 +241,9 @@ body.light .sobre-mi__p span {
 .node {
     background-color: #68a06338;
 }
+.nestjs {
+    background-color: #e0234e38;
+}
 .express {
     background-color: #6cc24a38;
 }

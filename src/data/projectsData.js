@@ -1,6 +1,7 @@
 import CoPiloto_Login from "../assets/images/CoPiloto-Login.webp";
 import CoPiloto_Home from "../assets/images/CoPiloto-Home.webp";
 import CoPiloto_Home_3 from "../assets/images/CoPiloto-Home-3.webp";
+import CoPiloto_Home_v2 from "../assets/images/CoPiloto-Home-v2.webp";
 import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
 import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
 import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
@@ -9,13 +10,15 @@ import Spotify_Full_Clone_2 from "../assets/images/Spotify-Full-Clone-2.webp"
 import Spotify_Full_Clone_3 from "../assets/images/Spotify-Full-Clone-3.webp"
 import Spotify_Full_Clone_Mobile from "../assets/images/Spotify-Full-Clone-Mobile.webp"
 import Spotify_Full_Clone_Desktop from "../assets/images/Spotify-Full-Clone-Desktop.webp"
+import Restaurante_Los_Manolos_Desktop from "../assets/images/Restaurante-Los-Manolos-Desktop.webp"
+import Restaurante_Los_Manolos from "../assets/images/Restaurante-Los-Manolos.webp"
 import Proximamente from "../assets/images/proximamente.webp"
 
 
 export const projects = [
     {
         id: "proyecto-1",
-        img: CoPiloto_Home_3,
+        img: CoPiloto_Home_v2,
         img_detail: CoPiloto_Login,
         link: "https://copiloto-carpooling.vercel.app/",
         repo: "https://github.com/GhersonSA/CoPiloto-Carpooling-App",
@@ -86,7 +89,7 @@ export const projects = [
             { tech: "PostgreSQL", use: "Consultas, relaciones y almacenamiento de datos" },
             { tech: "JWT + Cookie parser", use: "Autenticación y manejo seguro de sesiones" }
         ],
-        tools: ["React", "TailwindCSS", "Node.js", "Express.js", "PostgreSQL", "JWT", "Cookies"]
+        tools: ["Nextjs", "TypeScript", "TailwindCSS", "NestJS", "PostgreSQL", "Docker"]
     },
     {
         id: "proyecto-2",
@@ -150,41 +153,61 @@ export const projects = [
     },
     {
         id: "proyecto-3",
-        img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-        link: "url del proyecto 3",
+        img: Restaurante_Los_Manolos_Desktop,
+        img_detail: Restaurante_Los_Manolos,
+        link: "404",
         repo: "",
-        title: "Cliente Real (Próximamente...)",
-        cliente: "Negocio local", 
-        type: "Aplicación web",
-        summary: "App destinada a...",
-        introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
+        title: "Restaurante Los Manolos (Cliente Real)",
+        cliente: "Negocio Local - Zaragoza", 
+        type: "Digitalización & Desarrollo Web",
+        stack: "Negocio Local",
+        summary: "Digitalización integral de un restaurante tradicional. Desde el branding y la UX hasta el desarrollo de una plataforma de alto rendimiento con menús digitales QR, mejorando la captación de clientes y la operativa del negocio.",
+        introduccion: "Este proyecto representa un caso de éxito real donde la tecnología se pone al servicio de un negocio local. Como desarrollador único (Lead Developer), gestioné todo el ciclo de vida del producto: toma de requisitos con el cliente, diseño de la identidad visual, arquitectura de la información y despliegue en producción.",
+        description: "La solución no es solo una landing page; es una herramienta de venta. Desarrollada con Next.js y TypeScript para garantizar tiempos de carga instantáneos (vital para usuarios con datos móviles en el restaurante), la web cuenta con un sistema de menús optimizado y accesible. Se implementaron prácticas avanzadas de SEO local y accesibilidad, logrando posicionar al restaurante digitalmente. El resultado es una plataforma robusta, escalable y mantenible que ha modernizado la imagen de 'Los Manolos'.",
+        highlights: [
+            { description: "Solución de Negocio Real y Operativa." },
+            { description: "UX centrada en la conversión y accesibilidad." },
+            { description: "Integración de Menús Digitales QR." },
+            { description: "Arquitectura Escalable con Next.js & TS." },
+            { description: "Responsive y Mobile First." }
+        ],
         features: [
-            { description: "Entre las características principales destaca..."},
+            { description: "Entre las características principales destaca la fusión de diseño y rendimiento..."},
             {
-                title: "Funcionalidad 1",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Desarrollo Full Cycle",
+                text: "Demostración de autonomía total: gestión de cliente, diseño UI/UX, desarrollo frontend/backend, configuración de dominio y hosting."
             },
             {
-                title: "Funcionalidad 2",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Diseño UX/UI & Branding",
+                text: "Interfaz centrada en el usuario con una estética alineada a la identidad del restaurante, totalmente responsive y optimizada para SEO local."
+            },
+            {
+                title: "Menú Digital QR",
+                text: "Implementación de un sistema de carta digital optimizada para móviles, accesible mediante códigos QR en mesa, mejorando la higiene y la agilidad del servicio."
+            },
+            {
+                title: "Performance & Core Web Vitals",
+                text: "Optimización agresiva de recursos e imágenes para garantizar carga inmediata en redes 4G/5G, crucial para la experiencia de menú en mesa."
+            },
+            {
+                title: "SEO Local y Posicionamiento",
+                text: "Estructura semántica y metadatos optimizados para mejorar la visibilidad del restaurante en búsquedas locales en Zaragoza."
             }
         ],
         screenshots: [
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+            Restaurante_Los_Manolos,
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
         ],
         techDetails: [
-            { tech: "React", use: "Diseño de componentes para el Frontend" },
-            { tech: "TailwindCSS", use: "Facilidad de estilos para el Frontend" },
-            { tech: "Node.js", use: "Backend" },
-            { tech: "Express.js", use: "Backend" },
-            { tech: "MongoDB", use: "Base de datos" }
+            { tech: "Next.js", use: "Framework principal para SSR y optimización SEO" },
+            { tech: "TypeScript", use: "Lógica robusta y tipado estático" },
+            { tech: "TailwindCSS", use: "Estilizado rápido y diseño responsive" },
+            { tech: "Figma", use: "Prototipado y diseño de interfaz (UI)" },
+            { tech: "Vercel", use: "Despliegue y Hosting (CI/CD)" }
         ],
-        tools: ["Next.js", "TypeScript", "TailwindCSS"]
-    },
+        tools: ["Nextjs", "TypeScript", "TailwindCSS"]
+    }, /*
     {
         id: "proyecto-4",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
@@ -406,5 +429,5 @@ export const projects = [
             { tech: "MongoDB", use: "Base de datos" }
         ],
         tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js"]
-    }
+    } */
 ];

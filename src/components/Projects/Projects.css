@@ -207,6 +207,10 @@ body.light .card__title:hover {
     font-family: var(--font-primary);
 }
 
+.card__li i {
+    vertical-align: middle;
+}
+
 .proyectos__p {
     margin-top: 32px;
     text-align: center;

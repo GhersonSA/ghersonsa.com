@@ -65,7 +65,6 @@ header:hover {
   backdrop-filter: blur(10px);
   top: 0;
   padding-top: 100px;
-  padding-left: 35px;
   right: -100%;
   transition: all 0.5s;
   z-index: -1;
@@ -77,7 +76,7 @@ header:hover {
 .header__mobile li {
   display: block;
   margin: 20px 0;
-  padding-left: 12px;
+  text-align: center;
   line-height: 15px;
   list-style-type: circle;
 }
@@ -104,6 +103,7 @@ header:hover {
 .header__mobile-h2 {
   margin: 15px 0;
   color: var(--neutral-light);
+  text-align: center;
   text-shadow: 
     0 0 2px var(--primary-color-light),
     0 0 2px var(--primary-color-light),
@@ -112,6 +112,7 @@ header:hover {
 .header__mobile-perfil {
   display: flex;
   align-items: center;
+  justify-content: center;
   margin-bottom: 30px;
 }
 .header__mobile-perfil img {
@@ -154,14 +155,6 @@ header:hover {
 @media (min-width: 500px) {
     .header__mobile-perfil {
         justify-content: center;
-    }
-
-    .header__mobile li {
-      text-align: center;
-    }
-
-    .header__mobile h2 {
-      text-align: center;
     }
 }
 

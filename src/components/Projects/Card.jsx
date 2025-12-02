@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { techIcons } from '../../data/techIcons';
 import './Projects.css';
 
 const Card = ({ id, img, title, highlights = [], stack, tools }) => {
@@ -16,9 +17,19 @@ const Card = ({ id, img, title, highlights = [], stack, tools }) => {
                     ))}
                 </ul>
                 <ul className="card__ul">
-                    {tools.map((tool, index) => (
-                        <li key={index} className="card__li">{tool}</li>
-                    ))}
+                    {tools.map((tool, index) => {
+                        const tech = techIcons[tool];
+                        return (
+                        <li
+                            key={index}
+                            className="card__li"
+                            style={tech ? { backgroundColor: tech.color, color: "#fff" } : {}}
+                        >
+                            {tech ? <i className={tech.class} style={{ marginRight: 6 }}></i> : null}
+                            {tool}
+                        </li>
+                        );
+                    })}
                 </ul>
             </div>
         </Link>
