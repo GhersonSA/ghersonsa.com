@@ -211,67 +211,6 @@ body.light .sobre-mi__p span {
     font-size: 1.4rem;
 }
 
-.html {
-    background-color: #f0652938;
-}
-.css {
-    background-color: #2965f138;
-}
-.javascript {
-    background-color: #f0db4f38;
-}
-.react {
-    background-color: #88dded38;
-}
-.nextjs {
-    background-color: #00000038;
-}
-.angular {
-    background-color: #dd003838;
-}
-.typescript {
-    background-color: #3178c638;
-}
-.tailwind {
-    background-color: #00315938;
-}
-.sass {
-    background-color: #cc669938;
-}
-.node {
-    background-color: #68a06338;
-}
-.nestjs {
-    background-color: #e0234e38;
-}
-.express {
-    background-color: #6cc24a38;
-}
-.symfony {
-    background-color: #00000038;
-}
-.postgresql {
-    background-color: #33679138;
-}
-.mysql {
-    background-color: #00758f38;
-}
-.mongodb {
-    background-color: #3fa03738;
-}
-.docker {
-    background-color: #2496ed38;
-}
-.git {
-    background-color: #f1502f38;
-}
-.github {
-    background-color: #33333338;
-}
-.gitlab {
-    background-color: #fc6d2638;
-}
-
 @media (min-width: 670px) {
     .sobre-mi__container .h2-title {
         text-align: left;
