@@ -47,7 +47,8 @@ const About = () => {
                             <div className={`skills__container top__animation ${isVisible ? "visible" : ""}`}>
                                 {Object.entries(techIcons).map(([name, tech]) => (
                                     <span key={name}>
-                                    <div className={`skills__icon ${name.toLowerCase()}`}>
+                                    <div className={`skills__icon ${name.toLowerCase()}`}
+                                    style={{ backgroundColor: tech.color, color: "#fff" }}>
                                         <i className={tech.class}></i>
                                         <p>{name}</p>
                                     </div>
