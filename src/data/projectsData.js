@@ -12,6 +12,9 @@ import Spotify_Full_Clone_Mobile from "../assets/images/Spotify-Full-Clone-Mobil
 import Spotify_Full_Clone_Desktop from "../assets/images/Spotify-Full-Clone-Desktop.webp"
 import Restaurante_Los_Manolos_Desktop from "../assets/images/Restaurante-Los-Manolos-Desktop.webp"
 import Restaurante_Los_Manolos from "../assets/images/Restaurante-Los-Manolos.webp"
+import Restaurante_Los_Manolos_2 from "../assets/images/Restaurante-Los-Manolos-2.webp"
+import Restaurante_Los_Manolos_3 from "../assets/images/Restaurante-Los-Manolos-3.webp"
+import Restaurante_Los_Manolos_4 from "../assets/images/Restaurante-Los-Manolos-4.webp"
 import Proximamente from "../assets/images/proximamente.webp"
 
 
@@ -156,7 +159,7 @@ export const projects = [
         img: Restaurante_Los_Manolos_Desktop,
         img_detail: Restaurante_Los_Manolos,
         link: "https://restaurante-los-manolos.vercel.app/",
-        repo: "https://github.com/GhersonSA",
+        repo: "https://github.com/GhersonSA/Restaurante-Los-Manolos",
         title: "Restaurante Los Manolos (Cliente Real)",
         cliente: "Negocio Local - Zaragoza", 
         type: "Digitalización & Desarrollo Web",
@@ -196,8 +199,9 @@ export const projects = [
         ],
         screenshots: [
             Restaurante_Los_Manolos,
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
+            Restaurante_Los_Manolos_2,
+            Restaurante_Los_Manolos_3,
+            Restaurante_Los_Manolos_4
         ],
         techDetails: [
             { tech: "Next.js", use: "Framework principal para SSR y optimización SEO" },
