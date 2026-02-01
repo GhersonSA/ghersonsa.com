@@ -15,6 +15,9 @@ import Restaurante_Los_Manolos from "../assets/images/Restaurante-Los-Manolos.we
 import Restaurante_Los_Manolos_2 from "../assets/images/Restaurante-Los-Manolos-2.webp"
 import Restaurante_Los_Manolos_3 from "../assets/images/Restaurante-Los-Manolos-3.webp"
 import Restaurante_Los_Manolos_4 from "../assets/images/Restaurante-Los-Manolos-4.webp"
+import Airbnb_Full_Clone_Desktop from "../assets/images/Airbnb-Full-Clone-Desktop.webp"
+import Airbnb_Full_Clone from "../assets/images/Airbnb-Full-Clone.webp"
+import Airbnb_Full_Clone_2 from "../assets/images/Airbnb-Full-Clone-2.webp"
 import Proximamente from "../assets/images/proximamente.webp"
 
 
@@ -211,44 +214,83 @@ export const projects = [
             { tech: "Vercel", use: "Despliegue y Hosting (CI/CD)" }
         ],
         tools: ["Nextjs", "TypeScript", "TailwindCSS"]
-    }, /*
+    },
     {
         id: "proyecto-4",
-        img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+        img: Airbnb_Full_Clone_Desktop,
+        img_detail: Airbnb_Full_Clone,
         link: "url del proyecto 4",
-        repo: "",
-        title: "Próximamente...",
+        repo: "https://github.com/GhersonSA/Airbnb-Full-Clone",
+        title: "Airbnb Full Clone (Arquitectura Hexagonal & Microservicios)",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
-        summary: "App destinada a...",
-        introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
+        stack: "Fullstack + Microservicios",
+        summary: "Clon completo de Airbnb con arquitectura hexagonal de microservicios. Incluye búsqueda avanzada, calendario interactivo, gestión de propiedades y sistema de reservas.",
+        introduccion: "Airbnb Full Clone es un proyecto ambicioso que replica la funcionalidad completa de Airbnb utilizando arquitectura hexagonal y microservicios. El objetivo es demostrar cómo construir una aplicación escalable de nivel empresarial con tecnologías modernas.",
+        description: "Este proyecto va más allá de un simple clon visual. Implementa una arquitectura de microservicios real con API Gateway en NestJS que estructura módulos independientes: Auth, Properties, Bookings, Favorites, Payments y Reviews. Cada módulo sigue principios de arquitectura hexagonal, permitiendo escalabilidad y mantenibilidad. El frontend en Next.js 15 con React 19 ofrece una experiencia pixel-perfect, incluyendo una SearchBar dinámica con calendario doble, selector de viajeros y búsqueda por 10 ciudades españolas. La comunicación entre servicios se gestiona con RabbitMQ para operaciones asíncronas, PostgreSQL con Prisma ORM para persistencia de datos, y Redis para caché de alto rendimiento. Todo orquestado con Docker Compose y gestionado en un monorepo Turborepo.",
+        highlights: [
+            { description: "Arquitectura de microservicios con NestJS." },
+            { description: "API Gateway modular." },
+            { description: "Base de datos PostgreSQL con Prisma ORM." },
+            { description: "Mensajería asíncrona con RabbitMQ." },
+            { description: "Cache con Redis para optimización." },
+        ],
         features: [
-            { description: "Entre las características principales destaca..."},
+            { description: "Entre las características principales destacan..."},
             {
-                title: "Funcionalidad 1",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "SearchBar Avanzada",
+                text: "Búsqueda por destino con 10 ciudades españolas, calendario doble con días pasados deshabilitados, flexibilidad de fechas (±1-14 días) y selector de viajeros (adultos, niños, bebés, mascotas)."
             },
             {
-                title: "Funcionalidad 2",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Arquitectura de Microservicios",
+                text: "API Gateway que estructura módulos independientes: Auth (autenticación JWT), Properties (CRUD de propiedades), Bookings (reservas), Favorites (favoritos), Payments (pagos) y Reviews (reseñas)."
+            },
+            {
+                title: "Carruseles de Propiedades",
+                text: "Carruseles interactivos con categorías: Populares en España, De moda, Cercanos. Cada card incluye carrusel de imágenes, favoritos, ratings y badges."
+            },
+            {
+                title: "Base de Datos Relacional",
+                text: "Prisma ORM con PostgreSQL. Modelos completos para User, Property, Booking, Review, Favorite con relaciones optimizadas."
+            },
+            {
+                title: "Comunicación Asíncrona",
+                text: "RabbitMQ gestiona eventos entre microservicios (ej: crear reserva → procesar pago → enviar email → actualizar estadísticas)."
+            },
+            {
+                title: "Cache Inteligente",
+                text: "Redis cachea propiedades populares, sesiones de usuario y resultados de búsqueda frecuentes para reducir carga en la base de datos."
+            },
+            {
+                title: "Monorepo Escalable",
+                text: "Turborepo con workspaces: apps/ (web, api-gateway), packages/ (database, shared, ui). Facilita el desarrollo y deploy independiente."
+            },
+            {
+                title: "Responsive Design & Mobile First",
+                text: "Diseño adaptado a múltiples dispositivos con transiciones suaves estilo Airbnb original."
             }
         ],
         screenshots: [
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+            Airbnb_Full_Clone,
+            Airbnb_Full_Clone_2,
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
         ],
         techDetails: [
-            { tech: "React", use: "Diseño de componentes para el Frontend" },
-            { tech: "TailwindCSS", use: "Facilidad de estilos para el Frontend" },
-            { tech: "Node.js", use: "Backend" },
-            { tech: "Express.js", use: "Backend" },
-            { tech: "MongoDB", use: "Base de datos" }
+            { tech: "Next.js 15", use: "Framework frontend con SSR y optimización SEO" },
+            { tech: "React 19", use: "Biblioteca para construcción de UI" },
+            { tech: "TailwindCSS 4", use: "Estilizado utility-first y diseño responsive" },
+            { tech: "NestJS", use: "API Gateway y arquitectura de microservicios" },
+            { tech: "PostgreSQL", use: "Base de datos relacional principal" },
+            { tech: "Prisma ORM", use: "ORM type-safe para consultas y migraciones" },
+            { tech: "RabbitMQ", use: "Cola de mensajes para comunicación entre servicios" },
+            { tech: "Redis", use: "Cache distribuido para optimización" },
+            { tech: "Docker Compose", use: "Estructura de contenedores en desarrollo" },
+            { tech: "Turborepo", use: "Monorepo con builds optimizados" },
+            { tech: "Zustand", use: "Estado global con persistencia" },
+            { tech: "TypeScript", use: "Tipado estático en todo el proyecto" }
         ],
-        tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js"]
-    },
+        tools: ["Next.js", "TypeScript", "TailwindCSS", "NestJS", "PostgreSQL", "Docker"]
+    }, /*
     {
         id: "proyecto-5",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
