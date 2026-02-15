@@ -3,6 +3,7 @@ export const techIcons = {
   CSS: { class: "devicon-css3-plain colored", color: "#2965f138" },
   JavaScript: { class: "devicon-javascript-plain colored", color: "#f0db4f38" },
   React: { class: "devicon-react-original colored", color: "#88dded38" },
+  ReactNative: { class: "devicon-react-original colored", color: "#88dded38" },
   Nextjs: { class: "devicon-nextjs-plain", color: "#00000038" },
   Angular: { class: "devicon-angularjs-plain colored", color: "#dd003838" },
   TypeScript: { class: "devicon-typescript-plain colored", color: "#3178c638" },

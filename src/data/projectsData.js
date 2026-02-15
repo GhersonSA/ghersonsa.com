@@ -1,10 +1,11 @@
 import CoPiloto_Login from "../assets/images/CoPiloto-Login.webp";
-import CoPiloto_Home from "../assets/images/CoPiloto-Home.webp";
-import CoPiloto_Home_3 from "../assets/images/CoPiloto-Home-3.webp";
+import CoPiloto_Home from "../assets/images/CoPiloto-Home-v2.webp";
+import CoPiloto_Mobile_2 from "../assets/images/CoPiloto-Mobile-2.webp";
 import CoPiloto_Home_v2 from "../assets/images/CoPiloto-Home-v2.webp";
 import CoPiloto_Passengers from "../assets/images/CoPiloto-Passengers.webp";
 import CoPiloto_Payments from "../assets/images/CoPiloto-Payments.webp";
 import CoPiloto_Mobile from "../assets/images/CoPiloto-Mobile.webp";
+import CoPiloto_App from "../assets/images/CoPiloto-App.webp";
 import Spotify_Full_Clone from "../assets/images/Spotify-Full-Clone.webp"
 import Spotify_Full_Clone_2 from "../assets/images/Spotify-Full-Clone-2.webp"
 import Spotify_Full_Clone_3 from "../assets/images/Spotify-Full-Clone-3.webp"
@@ -31,7 +32,7 @@ export const projects = [
         title: "CoPiloto Carpooling App",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
-        stack: "Fullstack",
+        stack: "App móvil (+20 usuarios activos)",
         summary: "CoPiloto es una red social (Carpooling App) que conecta a personas con destinos similares para compartir viajes al trabajo. Permitiendo que los conductores generen ingresos extras ofreciendo asientos disponibles en sus recorridos diarios utilizando nuestra app.",
         introduccion: "CoPiloto es una aplicación web tipo carpooling que funciona como una red social de movilidad laboral. Permite que trabajadores encuentren transporte compartido hacia sus destinos y que conductores ofrezcan sus recorridos diarios, generando ingresos adicionales. Además, cuenta con un sistema de gestión de usuarios (CMS), donde se registran choferes y pasajeros con perfiles personalizados.",
         description: "CoPiloto surge como solución a la dificultad de transporte hacia zonas de trabajo alejadas, ofreciendo una plataforma que combina carpooling y comunidad. Implementé un backend con Node.js, Express y PostgreSQL que soporta un CRUD completo con consultas y relaciones entre usuarios, choferes, pasajeros y rutas. Para la autenticación se usan JWT y cookies seguras (cookie-parser), asegurando sesiones confiables. En frontend, la experiencia es intuitiva y responsive gracias a React y TailwindCSS. La aplicación también funciona como un CMS donde el administrador puede registrar y gestionar usuarios, choferes y pasajeros. Incluye un dashboard para choferes con historial de viajes, pasajeros e ingresos, además de un sistema de reseñas que fomenta la confianza entre la comunidad.",
@@ -81,21 +82,23 @@ export const projects = [
             }
         ],
         screenshots: [
+            CoPiloto_App,
             CoPiloto_Login,
             CoPiloto_Home,
+            CoPiloto_Mobile_2,
             CoPiloto_Passengers,
             CoPiloto_Payments,
             CoPiloto_Mobile
         ],
         techDetails: [
-            { tech: "React", use: "Diseño de componentes para el frontend" },
-            { tech: "TailwindCSS", use: "Facilidad de estilos para los componentes" },
-            { tech: "Node.js", use: "Entorno de ejecución para JavaScript del lado del servidor" },
-            { tech: "Express.js", use: "Framework para el desarrollo ágil de API con NodeJS" },
-            { tech: "PostgreSQL", use: "Consultas, relaciones y almacenamiento de datos" },
-            { tech: "JWT + Cookie parser", use: "Autenticación y manejo seguro de sesiones" }
+            { tech: "Next.js", use: "Frontend web moderno, SSR y rutas protegidas" },
+            { tech: "TypeScript", use: "Tipado estático y robustez en todo el stack" },
+            { tech: "React Native", use: "Desarrollo de la app móvil multiplataforma" },
+            { tech: "NestJS", use: "Backend modular y escalable con Node.js" },
+            { tech: "PostgreSQL", use: "Base de datos relacional y consultas avanzadas" },
+            { tech: "Docker", use: "Contenerización y despliegue de todos los servicios" }
         ],
-        tools: ["Nextjs", "TypeScript", "TailwindCSS", "NestJS", "PostgreSQL", "Docker"]
+        tools: ["Nextjs", "TypeScript", "ReactNative", "NestJS", "PostgreSQL", "Docker"]
     },
     {
         id: "proyecto-2",
@@ -106,7 +109,7 @@ export const projects = [
         title: "Spotify Full Clone (En progreso...)",
         cliente: "Proyecto personal", 
         type: "Aplicación web",
-        stack: "Frontend",
+        stack: "(Canciones y letras sincronizadas)",
         summary: "Clon que replica la experiencia completa de Spotify en versión web, ofreciendo diseño fiel al original, reproducción de música, sincronización de letras y gestión de colecciones locales, todo en una interfaz moderna y responsiva.",
         introduccion: "Spotify Full Clone es un proyecto personal desarrollado con HTML, JavaScript, React y TailwindCSS, cuyo objetivo es recrear la plataforma de música más popular del mundo. Este proyecto busca no solo imitar su estética, sino también ofrecer funcionalidades que brinden una experiencia inmersiva al usuario.",
         description: "La aplicación combina diseño responsivo, control dinámico de reproducción y sincronización de letras en tiempo real, logrando un entorno muy cercano al original. Además, permite la gestión local de colecciones musicales, garantizando una experiencia completa tanto en escritorio como en dispositivos móviles. Este clon es una demostración práctica de cómo integrar tecnologías modernas en un proyecto ambicioso y escalable.",
@@ -166,7 +169,7 @@ export const projects = [
         title: "Restaurante Los Manolos (Cliente Real)",
         cliente: "Negocio Local - Zaragoza", 
         type: "Digitalización & Desarrollo Web",
-        stack: "Negocio Local",
+        stack: "Negocio Local (+30% clientes)",
         summary: "Digitalización integral de un restaurante tradicional. Desde el branding y la UX hasta el desarrollo de una plataforma de alto rendimiento con menús digitales QR, mejorando la captación de clientes y la operativa del negocio.",
         introduccion: "Este proyecto representa un caso de éxito real donde la tecnología se pone al servicio de un negocio local. Como desarrollador único (Lead Developer), gestioné todo el ciclo de vida del producto: toma de requisitos con el cliente, diseño de la identidad visual, arquitectura de la información y despliegue en producción.",
         description: "La solución no es solo una landing page; es una herramienta de venta. Desarrollada con Next.js y TypeScript para garantizar tiempos de carga instantáneos (vital para usuarios con datos móviles en el restaurante), la web cuenta con un sistema de menús optimizado y accesible. Se implementaron prácticas avanzadas de SEO local y accesibilidad, logrando posicionar al restaurante digitalmente. El resultado es una plataforma robusta, escalable y mantenible que ha modernizado la imagen de 'Los Manolos'.",

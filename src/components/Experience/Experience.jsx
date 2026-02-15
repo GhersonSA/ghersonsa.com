@@ -12,9 +12,9 @@ const Experience = () => {
                                 <i className="fa-solid fa-briefcase"></i>
                             </span>
                             <h3 className="exp__h3">
-                                <span className="exp__span-1">Fundador & Desarrollador Web - Tradifusion</span>
+                                <span className="exp__span-1">Desarrollador Web - Tradifusion (Negocios Locales)</span>
                             </h3>
-                            <time className="exp__time">Diciembre 2025 - Actualidad</time>
+                            <time className="exp__time">Diciembre 2025 - Ferbrero 2025</time>
                             <p className="exp__p">· <strong>Consultoría y Digitalización para PYMES:</strong> Creación de soluciones digitales a medida para potenciar la visibilidad y operativa de negocios locales, actuando como socio tecnológico integral.</p>
                             <p className="exp__p">· <strong>Desarrollo Web & Branding 360º:</strong> Diseño y despliegue de sitios corporativos y landing pages de alto rendimiento (incluyendo el caso de éxito &#34;Restaurante Los Manolos&#34;), abarcando desde la identidad visual hasta la configuración de hosting y dominio.</p>
                             <p className="exp__p">· <strong>Optimización SEO y Performance:</strong> Implementación de estrategias de SEO local y optimización de Core Web Vitals para garantizar posicionamiento en buscadores y tiempos de carga mínimos.</p>
@@ -54,7 +54,7 @@ const Experience = () => {
                             <p className="exp__p">· <strong>Gestión de Datos Compleja: </strong>Modelado de base de datos relacional con PostgreSQL y Prisma ORM para gestionar relaciones entre conductores, pasajeros, rutas y sistemas de reseñas.</p>
                             <p className="exp__p">· <strong>Seguridad y Accesibilidad: </strong> Implementación de autenticación robusta (NextAuth + JWT + Cookies HttpOnly), gestión de roles (RBAC) y un modo invitado seguro.</p>
                             <p className="exp__p">· <strong>Infraestructura & DevOps:</strong> Contenerización del entorno (Frontend, Backend, DB) mediante Docker para asegurar la paridad entre desarrollo y producción. Preparación de endpoints API para futura migración a móvil (React Native).</p>
-                            <p className="exp__p"><strong>Stack:</strong> Next.js, TypeScript, Tailwind, NestJS, PostgreSQL, Prisma, Docker, Google Maps API</p>
+                            <p className="exp__p"><strong>Stack:</strong> Next.js, TypeScript, Tailwind, NestJS, PostgreSQL, Prisma, Docker, Google Maps API, React Native</p>
                         </li>
                         {/*}
                         <li className="exp__card">

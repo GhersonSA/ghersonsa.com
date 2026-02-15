@@ -26,11 +26,11 @@ const About = () => {
                             <h3 className={`sobre-mi__profesion down__animation ${isVisible ? "visible" : ""}`}>{'"Desarrollador Web"'}</h3>
                             <h4 className={`sobre-mi__disponibilidad down__animation ${isVisible ? "visible" : ""}`}><span>•</span> Disponible para trabajar</h4>
 
-                            <p className={`sobre-mi__p right__animation ${isVisible ? "visible" : ""}`}>La programación me atrapó por la posibilidad infinita de crear. <span>Hoy, desarrollo aplicaciones web modernas con TypeScript, React, Next.js, Node.js y las últimas tecnologías, manteniéndome siempre actualizado y en busca de nuevos desafíos.</span></p>
+                            <p className={`sobre-mi__p right__animation ${isVisible ? "visible" : ""}`}>La programación me atrapó por la posibilidad infinita de crear. <span>Hoy, desarrollo aplicaciones web modernas con TypeScript, React, Next.js, React Native, NestJS, PostgreSQL y las últimas tecnologías, manteniéndome siempre actualizado y en busca de nuevos desafíos.</span></p>
 
-                            <p className={`sobre-mi__p left__animation ${isVisible ? "visible" : ""}`}>He tenido la oportunidad de hacer de mi hobby una profesión y, <span>mis proyectos personales están enfocados a brindar soluciones a problemas de la vida cotidiana.</span></p>
+                            <p className={`sobre-mi__p left__animation ${isVisible ? "visible" : ""}`}>He convertido mi pasión en una profesión y, <span>mis proyectos personales están enfocados a brindar soluciones reales: CoPiloto App (+20 usuarios activos) y 30% en mejoras de negocios.</span></p>
 
-                            <p className={`sobre-mi__p right__animation ${isVisible ? "visible" : ""}`}>Fuera del código, me dedico a cuidar tanto mi cuerpo como mi mente. Leer me mantiene en equilibrio mental, mientras que ir al gimnasio me recuerda la importancia de la disciplina y el esfuerzo constante.</p>
+                            <p className={`sobre-mi__p right__animation ${isVisible ? "visible" : ""}`}>Fuera del código, cuido mi bienestar físico y mental: leer me mantiene en equilibrio y el gimnasio me enseña disciplina y constancia, valores que aplico también en el desarrollo de software.</p>
 
                             <span className={`sobre-mi__float-1 left__animation ${isVisible ? "visible" : ""}`}>
                                 <i className="fa-regular fa-circle-check"></i> Alta adaptabilidad <i className="fa-solid fa-person-rays"></i> <br />
