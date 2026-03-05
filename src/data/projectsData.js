@@ -19,6 +19,8 @@ import Restaurante_Los_Manolos_4 from "../assets/images/Restaurante-Los-Manolos-
 import Airbnb_Full_Clone_Desktop from "../assets/images/Airbnb-Full-Clone-Desktop.webp"
 import Airbnb_Full_Clone from "../assets/images/Airbnb-Full-Clone.webp"
 import Airbnb_Full_Clone_2 from "../assets/images/Airbnb-Full-Clone-2.webp"
+import Prueba_Tecnica_Desktop from "../assets/images/Prueba-Tecnica-Desktop.webp"
+import Prueba_Tecnica from "../assets/images/Prueba-Tecnica.webp"
 import Proximamente from "../assets/images/proximamente.webp"
 
 
@@ -292,45 +294,52 @@ export const projects = [
             { tech: "Zustand", use: "Estado global con persistencia" },
             { tech: "TypeScript", use: "Tipado estático en todo el proyecto" }
         ],
-        tools: ["Next.js", "TypeScript", "TailwindCSS", "NestJS", "PostgreSQL", "Docker"]
-    }, /*
+        tools: ["Nextjs", "TypeScript", "TailwindCSS", "NestJS", "PostgreSQL", "Docker"]
+    },
     {
         id: "proyecto-5",
-        img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+        img: Prueba_Tecnica_Desktop,
+        img_detail: Prueba_Tecnica,
         link: "url del proyecto 5",
         repo: "",
-        title: "Próximamente...",
-        cliente: "Proyecto personal", 
-        type: "Aplicación web",
-        summary: "App destinada a...",
-        introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
+        title: "React Native App Frontend",
+        cliente: "Proceso de Selección (Confidencial)", 
+        type: "Aplicación Móvil",
+        stack: "Prueba Técnica 48h (resuelta en 8h)",
+        summary: "Resolución de una prueba técnica de 48 horas para un rol FrontEnd React Native resuelta en 8 horas, enfocada en escalabilidad, manejo de caché y UI/UX.",
+        introduccion: "Este proyecto fue desarrollado como respuesta a un reto técnico real para un puesto de Programador/a FrontEnd. El objetivo principal fue construir desde cero una aplicación móvil multiplataforma que consumiera una API, demostrando dominio en la arquitectura del proyecto, el manejo de estados asíncronos y la maquetación de interfaces modernas.",
+        description: "Afrontar este desafío requirió tomar decisiones tecnológicas rápidas y precisas debido al límite de tiempo. Para garantizar un código limpio y escalable, se optó por un stack avanzado: React Native con TypeScript para el tipado estricto, Zustand para el estado global (sistema de votos) y TanStack React Query para dominar el 'fetching' de datos y la paginación. El resultado es una aplicación robusta que no solo cumple los requisitos, sino que aporta valor añadido en rendimiento y diseño.",
+        highlights: [{ description: "Desarrollo bajo presión: Entrega de una aplicación completa, funcional y con arquitectura 'pixel-perfect' en un plazo estricto de 48 horas (resuelta en 8h), aplicando buenas prácticas como 'barrel exports' y variables de entorno."}],
         features: [
-            { description: "Entre las características principales destaca..."},
+            { description: "Para superar los requisitos de evaluación, se implementaron las siguientes funcionalidades clave:"},
             {
-                title: "Funcionalidad 1",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Scroll Infinito y Caché (React Query)",
+                text: "Resolución del requisito de carga masiva de imágenes mediante un 'FlatList' con 'onEndReached' y 'useInfiniteQuery', optimizando la memoria y evitando bloqueos en la interfaz."
             },
             {
-                title: "Funcionalidad 2",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Sistema de Votación en Tiempo Real",
+                text: "Implementación de interacciones de Like/Dislike sincronizadas con TheCatAPI y gestionadas localmente de forma instantánea usando Zustand para evitar tiempos de espera visuales (Optimistic Updates)."
+            },
+            {
+                title: "Diseño UI/UX con NativeWind",
+                text: "Maquetación fiel a los estándares modernos de diseño móvil usando clases utilitarias de Tailwind adaptadas a React Native, incluyendo tipografía personalizada (Poppins) y 'Skeleton Loaders'."
             }
         ],
         screenshots: [
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+            Prueba_Tecnica,
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
         ],
         techDetails: [
-            { tech: "React", use: "Diseño de componentes para el Frontend" },
-            { tech: "TailwindCSS", use: "Facilidad de estilos para el Frontend" },
-            { tech: "Node.js", use: "Backend" },
-            { tech: "Express.js", use: "Backend" },
-            { tech: "MongoDB", use: "Base de datos" }
+            { tech: "React Native / Expo", use: "Framework principal para asegurar compilación en iOS y Android" },
+            { tech: "TypeScript", use: "Prevención de errores mediante tipado de respuestas de la API" },
+            { tech: "TanStack React Query", use: "Gestión avanzada de peticiones, caché y scroll infinito" },
+            { tech: "Zustand", use: "Store global ligero para los votos de las imágenes" },
+            { tech: "NativeWind", use: "Estilización rápida y consistente basada en Tailwind CSS" },
+            { tech: "Axios", use: "Cliente HTTP configurado con interceptores para la API Key" }
         ],
-        tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js"]
-    },
+        tools: ["ReactNative", "Expo", "TypeScript", "React Query", "Zustand", "TailwindCSS", "Axios"]
+    },  /*
     {
         id: "proyecto-6",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
@@ -353,7 +362,7 @@ export const projects = [
                 title: "Funcionalidad 2",
                 text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
             }
-        ],
+        ], 
         screenshots: [
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
