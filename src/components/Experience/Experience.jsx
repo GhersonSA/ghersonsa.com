@@ -33,7 +33,7 @@ const Experience = () => {
                                 <span className="exp__span-1">-</span>
                                 <span className="exp__span-2">Zaragoza</span>
                             </h3>
-                            <time className="exp__time">Agosto 2025 - Febrero 2026</time>
+                            <time className="exp__time">Agosto 2025 - Abril 2026</time>
                             <p className="exp__p">· <strong>Lideré el desarrollo completo de un entorno colaborativo</strong> (equipo de 6 desarrolladores) para una plataforma de eventos, integrando módulos dinámicos permitiendo a administradores editar eventos destacados y redes sociales desde el panel de control con Angular, Tailwind CSS y TypeScript.</p>
                             <p className="exp__p">· <strong>Desarrollé e implementé arquitectura de APIs RESTful robustas </strong>para un sistema de reservas y gestión de entidades para un estudio musical.</p>
                             <p className="exp__p">· <strong>Contenerización de aplicaciones </strong>y gestión de entornos de despliegue continuo con Docker.</p>
@@ -49,7 +49,7 @@ const Experience = () => {
                             <h3 className="exp__h3">
                                 <span className="exp__span-1">Desarrollador Web FullStack & Consultor - Tradifusion</span>
                             </h3>
-                            <time className="exp__time">Enero 2025 - Diciembre 2025</time>
+                            <time className="exp__time">Junio 2024 - Septiembre 2025</time>
                             <p className="exp__p">· <strong>Consultoría y Digitalización para PYMES:</strong> Creación de soluciones digitales a medida para potenciar la visibilidad y operativa de negocios locales, actuando como socio tecnológico integral.</p>
                             <p className="exp__p">· <strong>Desarrollo Web & Branding 360º:</strong> Diseño y despliegue de sitios corporativos y landing pages de alto rendimiento (incluyendo el caso de éxito &#34;Restaurante Los Manolos&#34;), abarcando desde la identidad visual hasta la configuración de hosting y dominio.</p>
                             <p className="exp__p">· <strong>Optimización SEO y Performance:</strong> Implementación de estrategias de SEO local y optimización de Core Web Vitals para garantizar posicionamiento en buscadores y tiempos de carga mínimos.</p>
