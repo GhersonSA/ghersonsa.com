@@ -21,6 +21,9 @@ import Airbnb_Full_Clone from "../assets/images/Airbnb-Full-Clone.webp"
 import Airbnb_Full_Clone_2 from "../assets/images/Airbnb-Full-Clone-2.webp"
 import Prueba_Tecnica_Desktop from "../assets/images/Prueba-Tecnica-Desktop.webp"
 import Prueba_Tecnica from "../assets/images/Prueba-Tecnica.webp"
+import Duacat from "../assets/images/Duacat.webp"
+import Duacat_Desktop from "../assets/images/Duacat-Desktop.webp"
+import Duacat_Desktop_2 from "../assets/images/Duacat-Desktop-2.webp"
 import Proximamente from "../assets/images/proximamente.webp"
 
 
@@ -224,7 +227,7 @@ export const projects = [
         id: "proyecto-4",
         img: Airbnb_Full_Clone_Desktop,
         img_detail: Airbnb_Full_Clone,
-        link: "url del proyecto 4",
+        link: "https://github.com/GhersonSA/Airbnb-Full-Clone",
         repo: "https://github.com/GhersonSA/Airbnb-Full-Clone",
         title: "Airbnb Full Clone (Arquitectura Hexagonal & Microservicios)",
         cliente: "Proyecto personal", 
@@ -298,10 +301,10 @@ export const projects = [
     },
     {
         id: "proyecto-5",
-        img: Prueba_Tecnica_Desktop,
-        img_detail: Prueba_Tecnica,
-        link: "url del proyecto 5",
-        repo: "",
+        img: Duacat_Desktop_2,
+        img_detail: Duacat,
+        link: "https://github.com/GhersonSA/duacat-app",
+        repo: "https://github.com/GhersonSA/duacat-app",
         title: "React Native App Frontend",
         cliente: "Proceso de Selección (Confidencial)", 
         type: "Aplicación Móvil",
@@ -326,8 +329,9 @@ export const projects = [
             }
         ],
         screenshots: [
+            Duacat,
             Prueba_Tecnica,
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
+            Duacat_Desktop,
             "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
         ],
         techDetails: [
