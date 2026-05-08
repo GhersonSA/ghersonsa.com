@@ -24,6 +24,10 @@ import Prueba_Tecnica from "../assets/images/Prueba-Tecnica.webp"
 import Duacat from "../assets/images/Duacat.webp"
 import Duacat_Desktop from "../assets/images/Duacat-Desktop.webp"
 import Duacat_Desktop_2 from "../assets/images/Duacat-Desktop-2.webp"
+import Ree_Balance_Electrico_Desktop from "../assets/images/Ree-Balance-Electrico-Desktop.webp"
+import Ree_Balance_Electrico from "../assets/images/Ree-Balance-Electrico.webp"
+import Ree_Balance_Electrico_2 from "../assets/images/Ree-Balance-Electrico-2.webp"
+import Ree_Balance_Electrico_Gif from "../assets/images/Ree-Balance-Electrico.gif.gif"
 import Proximamente from "../assets/images/proximamente.webp"
 
 
@@ -343,44 +347,61 @@ export const projects = [
             { tech: "Axios", use: "Cliente HTTP configurado con interceptores para la API Key" }
         ],
         tools: ["ReactNative", "Expo", "TypeScript", "React Query", "Zustand", "TailwindCSS", "Axios"]
-    },  /*
+    },
     {
         id: "proyecto-6",
-        img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-        link: "url del proyecto 6",
-        repo: "",
-        title: "Próximamente...",
-        cliente: "Proyecto personal", 
-        type: "Aplicación web",
-        summary: "App destinada a...",
-        introduccion: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.",
-        highlights: [{ description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non. epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non.epe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."}],
+        img: Ree_Balance_Electrico_Desktop,
+        img_detail: Ree_Balance_Electrico_Gif,
+        link: "https://github.com/GhersonSA/ree-balance-electrico-fullstack",
+        repo: "https://github.com/GhersonSA/ree-balance-electrico-fullstack",
+        title: "REE Balance Eléctrico",
+        cliente: "Proceso de Selección (Confidencial)", 
+        type: "Aplicación web Analítica",
+        stack: "Prueba Técnica (resuelta en 6h)",
+        summary: "Resolución de una prueba técnica de un sistema de monitoreo de energía nacional en tiempo real conectado a la API de Red Eléctrica de España (REE). Implementa sincronización programada, persistencia de series temporales y visualización analítica.",
+        introduccion: "Este proyecto es una solución de ingeniería robusta diseñada para capturar, normalizar y visualizar datos complejos del balance eléctrico. Se enfoca en la fiabilidad de los datos y la observabilidad operativa, resolviendo retos de integración con APIs externas y gestión de grandes volúmenes de registros históricos.",
+        description: "Desarrollada con un enfoque 'production-ready', la aplicación utiliza NestJS para orquestar un pipeline de datos que garantiza la integridad mediante operaciones de 'upsert' y registros de auditoría (ingest logs). El backend incluye una estrategia de degradación controlada: si la API de REE falla, el sistema sirve datos en estado 'stale' con marcas de tiempo precisas. El frontend, construido con React 19 y React Query, ofrece una experiencia fluida para consultar rangos temporales extensos, optimizando las peticiones al servidor y presentando la información mediante gráficos interactivos de Recharts con escalado adaptativo.",
+        highlights: [
+            { description: "Pipeline de datos determinista con sincronización automática (Cron jobs) y manual."},
+            { description: "Optimización PostgreSQL con índices para series temporales." },
+            { description: "Resiliencia ante fallos de APIs externas (Graceful degradation)." }
+        ],
         features: [
-            { description: "Entre las características principales destaca..."},
+            { description: "Para garantizar la precisión analítica y la calidad del código, se implementaron:"},
             {
-                title: "Funcionalidad 1",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Visualización Dinámica",
+                text: "Gráficos de área y líneas con Recharts que permiten comparar la mezcla de generación y demanda con agregación por día o mes."
             },
             {
-                title: "Funcionalidad 2",
-                text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam voluptate obcaecati est doloremque commodi illum ea quidem dolorum odit saepe distinctio molestiae voluptates, neque explicabo harum, esse ullam? Maxime, non."
+                title: "Persistencia e Idempotencia",
+                text: "Uso de TypeORM con restricciones únicas complejas para evitar duplicados y asegurar que cada punto de datos sea único por timestamp e indicador."
+            },
+            {
+                title: "Observabilidad de Ingesta",
+                text: "Sistema de logs en base de datos para trackear el estado de cada sincronización, errores de red y tiempos de respuesta de la API de REE."
+            },
+            {
+                title: "Documentación y Contenedores",
+                text: "API totalmente documentada con Swagger/OpenAPI y orquestación completa del entorno (DB, API, Web) mediante Docker Compose."
             }
         ], 
         screenshots: [
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
-            "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg"
+            Ree_Balance_Electrico_Gif,
+            Ree_Balance_Electrico,
+            Ree_Balance_Electrico_2,
         ],
         techDetails: [
-            { tech: "React", use: "Diseño de componentes para el Frontend" },
-            { tech: "TailwindCSS", use: "Facilidad de estilos para el Frontend" },
-            { tech: "Node.js", use: "Backend" },
-            { tech: "Express.js", use: "Backend" },
-            { tech: "MongoDB", use: "Base de datos" }
+            { tech: "NestJS", use: "Framework backend modular con inyección de dependencias" },
+            { tech: "React 19", use: "Interfaz de usuario moderna con Hooks y composición" },
+            { tech: "PostgreSQL 16", use: "Motor de base de datos relacional para datos históricos" },
+            { tech: "TanStack Query", use: "Gestión eficiente de caché y estados de carga del servidor" },
+            { tech: "TypeORM", use: "Manejo de modelos de datos y migraciones de esquema" },
+            { tech: "Docker", use: "Contenedores para asegurar paridad entre entornos" },
+            { tech: "Recharts", use: "Librería de visualización de datos optimizada para React" },
+            { tech: "Swagger", use: "Auto-generación de documentación interactiva de la API" }
         ],
-        tools: ["HTML", "CSS", "JavaScript", "React", "TailwindCSS", "Node.js", "Express.js"]
-    },
+        tools: ["React", "TypeScript", "NestJS", "PostgreSQL", "Docker", "TypeORM"]
+    },   /*
     {
         id: "proyecto-7",
         img: "https://st5.depositphotos.com/5845802/64038/v/600/depositphotos_640383330-stock-video-question-mark-old-television-screen.jpg",
