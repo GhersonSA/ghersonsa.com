@@ -12,16 +12,15 @@ const Experience = () => {
                                 <i className="fa-solid fa-suitcase"></i>
                             </span>
                             <h3 className="exp__h3">
-                                <span className="exp__span-1">Desarrollador FullStack (Lead) & Arquitecto - CoPiloto Carpooling App</span>
-                                <span className="exp__span-1"></span>
-                                <span className="exp__span-2"></span>
+                                <span className="exp__span-1">Full-Stack Engineer & Software Architect - CoPiloto Carpooling App</span>
+                                <span className="exp__span-1">-</span>
+                                <span className="exp__span-2">Zaragoza, España</span>
                             </h3>
                             <time className="exp__time">Marzo 2025 - Actualidad</time>
-                            <p className="exp__p">· <strong>Lideré el desarrollo técnico e integral</strong> de una plataforma SaaS de movilidad compartida (Carpooling) diseñada para resolver la falta de transporte en zonas industriales periféricas de Zaragoza.</p>
-                            <p className="exp__p">· <strong>Arquitectura Full Stack escalable: </strong>Diseñé un sistema desacoplado utilizando Next.js (App Router) en el frontend y NestJS (Modular) en el backend, garantizando mantenibilidad y separación de responsabilidades.</p>
-                            <p className="exp__p">· <strong>Gestión de Datos Compleja: </strong>Modelado de base de datos relacional con PostgreSQL y Prisma ORM para gestionar relaciones entre conductores, pasajeros, rutas y sistemas de reseñas.</p>
-                            <p className="exp__p">· <strong>Seguridad y Accesibilidad: </strong> Implementación de autenticación robusta (NextAuth + JWT + Cookies HttpOnly), gestión de roles (RBAC) y un modo invitado seguro.</p>
-                            <p className="exp__p">· <strong>Infraestructura & DevOps:</strong> Contenerización del entorno (Frontend, Backend, DB) mediante Docker para asegurar la paridad entre desarrollo y producción. Preparación de endpoints API para futura migración a móvil (React Native).</p>
+                            <p className="exp__p"><span className="exp__p exp__span-2">Reto:</span> Crear una plataforma de carpooling (+20 usuarios activos) para zonas industriales. Responsable del ciclo completo: desde la arquitectura hasta el despliegue (E2E).</p>
+                            <p className="exp__p">· <strong>Logré una reducción del 40% en el tiempo de desarrollo</strong> mediante la arquitectura de código compartido en TypeScript, permitiendo que la lógica de negocio se ejecute de forma idéntica en la web administrativa (Next.js) y la aplicación móvil (React Native).</p>
+                            <p className="exp__p">· <strong>Optimicé la integridad de datos críticos </strong>modelando una base de datos relacional compleja en PostgreSQL con Prisma ORM, gestionando flujos de concurrencia entre conductores y pasajeros en tiempo real.</p>
+                            <p className="exp__p">· <strong>Aseguré la paridad total del entorno (Dev/Prod) </strong>mediante la implementación de un stack de contenedores con Docker, facilitando la integración de NextAuth y RBAC para una seguridad de grado empresarial.</p>
                             <p className="exp__p"><strong>Stack:</strong> Next.js, TypeScript, Tailwind, NestJS, PostgreSQL, Prisma, Docker, Google Maps API, React Native</p>
                         </li>
                         <li className="exp__card">
@@ -29,32 +28,35 @@ const Experience = () => {
                                 <i className="fa-solid fa-suitcase"></i>
                             </span>
                             <h3 className="exp__h3">
-                                <span className="exp__span-1">FullStack Developer - CodeArts Solutions (Remoto)</span>
+                                <span className="exp__span-1">Full-Stack Developer - CodeArts Solutions (Remoto)</span>
                                 <span className="exp__span-1">-</span>
-                                <span className="exp__span-2">Zaragoza</span>
+                                <span className="exp__span-2">Sevilla, España</span>
                             </h3>
                             <time className="exp__time">Septiembre 2025 - Mayo 2026</time>
-                            <p className="exp__p">· <strong>Lideré el desarrollo completo de un entorno colaborativo</strong> (equipo de 6 desarrolladores) para una plataforma de eventos, integrando módulos dinámicos permitiendo a administradores editar eventos destacados y redes sociales desde el panel de control con Angular, Tailwind CSS y TypeScript.</p>
-                            <p className="exp__p">· <strong>Desarrollé e implementé arquitectura de APIs RESTful robustas </strong>para un sistema de reservas y gestión de entidades para un estudio musical.</p>
-                            <p className="exp__p">· <strong>Contenerización de aplicaciones </strong>y gestión de entornos de despliegue continuo con Docker.</p>
-                            <p className="exp__p">· <strong>Gestión de bases de datos relacionales, incluyendo migraciones complejas </strong> y modelado de entidades con PostgreSQL.</p>
+                            <p className="exp__p"><span className="exp__p exp__span-2">Reto:</span> Desarrollar y escalar plataformas de alto tráfico para el sector cultural y de eventos. </p>
+                            <p className="exp__p">· <strong>Escalé el rendimiento de la plataforma de un Museo (+26k usuarios/mes)</strong> integrando módulos dinámicos con Next.js y TypeScript que permitieron una gestión de contenido en tiempo real sin degradación del rendimiento.</p>
+                            <p className="exp__p">· <strong>Reduje el tiempo de respuesta del servidor en un 30% </strong>para una plataforma de eventos (+15k usuarios/mes) mediante la optimización de consultas en Node.js/NestJS y estrategias avanzadas de caché.</p>
+                            <p className="exp__p">· <strong>Garanticé el 99.9% de disponibilidad </strong>en sistema de reservas simultáneas mediante el diseño de una arquitectura de base de datos idempotente en PostgreSQL, gestionando migraciones complejas sin tiempo de inactividad. </p>
+                            <p className="exp__p">· <strong>Mitigué riesgos financieros y de identidad </strong> integrando pasarelas de pago con Stripe y sistemas de autenticación social con JWT y Google API.</p>
                             <p className="exp__p">· <strong>Integré funcionalidades como autenticación social con Google API y seguridad mediante JWT,</strong> verificaciones de correo y gestión de roles y pasarelas de pagos seguras con Stripe.</p>
-                            <p className="exp__p">· <strong>Apliqué metodologías ágiles (KANBAN y Git Flow),</strong> con seguimiento diario en Slack.</p>
-                            <p className="exp__p"><strong>Stack:</strong> Angular, Symfony, PostgreSQL, TypeScript, Node.js, Postman, Docker, GitLab.</p>
+                            <p className="exp__p"><strong>Stack:</strong> React (Next.js), Node.js, NestJS, TypeScript, PostgreSQL, Docker, Stripe, Google API, Git Flow </p>
                         </li>
                         <li className="exp__card">
                             <span className="exp__logo">
                                 <i className="fa-solid fa-briefcase"></i>
                             </span>
                             <h3 className="exp__h3">
-                                <span className="exp__span-1">Desarrollador Web FullStack & Consultor - Tradifusion</span>
+                                <span className="exp__span-1">Full-Stack Developer - Tradifusion</span>
+                                <span className="exp__span-1">-</span>
+                                <span className="exp__span-2">Zaragoza, España</span>
                             </h3>
                             <time className="exp__time">Diciembre 2023 - Agosto 2025</time>
-                            <p className="exp__p">· <strong>Consultoría y Digitalización para PYMES:</strong> Creación de soluciones digitales a medida para potenciar la visibilidad y operativa de negocios locales, actuando como socio tecnológico integral.</p>
-                            <p className="exp__p">· <strong>Desarrollo Web & Branding 360º:</strong> Diseño y despliegue de sitios corporativos y landing pages de alto rendimiento (incluyendo el caso de éxito &#34;Restaurante Los Manolos&#34;), abarcando desde la identidad visual hasta la configuración de hosting y dominio.</p>
-                            <p className="exp__p">· <strong>Optimización SEO y Performance:</strong> Implementación de estrategias de SEO local y optimización de Core Web Vitals para garantizar posicionamiento en buscadores y tiempos de carga mínimos.</p>
+                            <p className="exp__p"><span className="exp__p exp__span-2">Reto:</span> Liderar la transformación digital y desarrollo de software de alto rendimiento en sector PYME. </p>
+                            <p className="exp__p">· <strong>Incrementé la eficiencia operativa en un 30%</strong> mediante el desarrollo de aplicaciones de gestión interna en tiempo real con Next.js y NestJS para el sector restauración.</p>
+                            <p className="exp__p">· <strong>Logré puntuaciones 100/100 en Core Web Vitals</strong> para productos mediante el uso avanzado de SSR/ISR y optimización SEO técnica, mejorando la conversión de clientes en un 25%.</p>
+                            <p className="exp__p">· <strong>Reduje latencias y aumenté la seguridad perimetral </strong> gestionando infraestructuras en VPS y configurando Cloudflare (CDN/SSL) para entornos de producción.</p>
                             <p className="exp__p">· <strong>Soporte y Mantenimiento:</strong> Gestión continua de infraestructura digital, actualizaciones de seguridad y asesoramiento técnico personalizado para la escalabilidad del negocio.</p>
-                            <p className="exp__p"><strong>Stack:</strong> Next.js, TypeScript, TailwindCSS, NestJS, PostgreSQL, Docker.</p>
+                            <p className="exp__p"><strong>Stack:</strong> React (Next.js), TypeScript, TailwindCSS, NestJS, PostgreSQL, Docker, Cloudflare, VPS </p>
                         </li>
                     
                         {/*}
